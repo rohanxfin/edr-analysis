@@ -2,3 +2,4 @@ pandas
 google-generativeai
 markdown
 weasyprint
+reportlab
