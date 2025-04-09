@@ -1,0 +1,59 @@
+### Comprehensive Work Report Analysis for Rohan Khandelwal (March 2025)
+
+#### Overview and Context
+Rohan Khandelwal's work throughout March 2025 focused primarily on the development, optimization, and deployment of machine learning (ML) and image processing APIs for various projects, including watermark removal, price prediction, and number plate recognition. Additionally, he worked on integrating AI solutions with both internal CRM systems and external applications. Key tasks revolved around resolving technical issues, learning new tools, and implementing solutions in cloud environments. Rohan's work spanned both back-end (API development, ML model optimization) and front-end (CRM integration) tasks, contributing to multiple ongoing projects.
+
+#### Task Breakdown and Key Activities
+
+1. **Watermark Removal API Development**
+   - **Objective**: To create an image processing API that removes watermarks from images.
+   - **Challenges**: Rohan encountered significant challenges in hosting the watermark removal model on pre-prod due to the image processing models' high GPU requirements. These models required heavy computational power, which led to issues with the EC2 instances lacking the necessary GPU capabilities.
+   - **Solutions**: Rohan attempted to reduce the model size from 230MB to 50MB to improve performance, though it still struggled with CPU limitations. He explored alternative solutions, including transitioning to Google Cloud Run for more efficient and cost-effective deployment.
+   - **Outcome**: After working through multiple technical hurdles, the watermark removal functionality was successfully hosted on CRM, allowing for operational deployment.
+
+2. **Price Prediction Model**
+   - **Objective**: To enhance the price prediction model with more car data and improve accuracy.
+   - **Achievements**: Rohan finalized the price prediction system for up to 880 car variants, with a depreciation formula incorporated. He refactored the API to optimize the process and push it to pre-prod. He also explored ways to incorporate seasonal factors into the model and extended coverage to additional variants.
+   - **Challenges**: The task of acquiring more car data, especially for models with fewer than 25 data points, required significant effort, but Rohan addressed it through a planned approach.
+   - **Outcome**: Price prediction for 880 variants was successfully deployed and tested, with plans for further expansion.
+
+3. **Number Plate Detection and Recognition**
+   - **Objective**: To improve the accuracy of number plate detection, especially for tilted or slanted cars.
+   - **Achievements**: Rohan improved the accuracy of the number plate detection model, achieving results close to the expected performance benchmark (Spyne). This model was integrated into CRM, and further refinements were made to ensure robustness.
+   - **Outcome**: The number plate recognition functionality was successfully deployed on CRM.
+
+4. **Large Language Model (LLM) Research and Development**
+   - **Objective**: To develop an LLM-based retrieval engine for internal use, potentially aiding in AI-driven content creation and customer support.
+   - **Achievements**: Rohan began working on LLM integration, focusing on data storage, embedding creation, and training models. He investigated various cloud hosting options and considered using OpenAI and Chroma DB for hosting and managing the models.
+   - **Challenges**: The project required understanding complex technical concepts related to LLMs, embedding, and API integration.
+   - **Outcome**: Rohan laid the groundwork for the LLM project, setting up the database and basic integration logic for demo purposes. The execution of the first demo was planned to begin in the following weeks.
+
+5. **Additional Tasks**
+   - **API and Cloud Hosting**: Rohan gained experience with Google Cloud Run (GCR) and AWS SageMaker, learning about containerization (Docker) and hosting APIs in the cloud. He successfully deployed image processing APIs to GCR, enabling a cost-efficient usage model (pay-per-call basis).
+   - **Team Collaboration and Meetings**: Rohan actively communicated with team members, including Manmohan Ji and Neeraj Ji, to discuss project updates, future implementations, and technical roadblocks.
+
+#### Performance Evaluation
+
+Rohan demonstrated a high level of technical expertise, problem-solving skills, and initiative in tackling complex issues related to machine learning and cloud deployment. He successfully managed multiple high-priority tasks, even when faced with technical setbacks (e.g., GPU limitations and deployment challenges). His ability to reduce model sizes and explore alternative hosting solutions (Google Cloud Run) showcased innovative thinking.
+
+Despite facing challenges with the watermark removal model and the initial lack of sufficient GPU power, Rohan showed persistence in finding viable solutions. His clear communication and proactive approach to learning new tools (Docker, Google Cloud Run) were also commendable.
+
+#### Sentiment & Tone Analysis
+
+The tone of Rohan's reports is generally focused and professional, with occasional expressions of frustration related to technical challenges. However, he consistently follows up with a problem-solving mindset, suggesting possible solutions and next steps. There is a sense of responsibility and ownership in his updates, especially when dealing with tasks like the watermark removal model and price prediction project.
+
+#### Skills and Competency Insights
+
+- **Technical Skills**: Rohan demonstrated proficiency in machine learning, API development, cloud hosting, and Docker containerization. His ability to adapt to new tools and cloud platforms (GCR, AWS SageMaker) shows a strong inclination toward continuous learning.
+- **Problem-Solving**: His approach to overcoming technical hurdles, such as GPU limitations and scaling issues, highlights his problem-solving capabilities.
+- **Collaboration**: Rohan actively engaged with his team members and sought feedback when necessary, indicating strong collaboration skills.
+
+#### Actionable Recommendations
+
+1. **Training in Advanced Cloud Platforms**: Given Rohan's focus on cloud hosting, further training in advanced cloud services (e.g., AWS, GCP, Azure) could improve his ability to choose the best solution for different project requirements.
+2. **Model Optimization**: Rohan could explore model compression techniques further to reduce the size of ML models, which will help with scalability and deployment, particularly for resource-constrained environments.
+3. **Continued Focus on Communication**: While Rohan communicates effectively, ensuring more detailed documentation for team members, especially when dealing with complex issues, could enhance team understanding and knowledge sharing.
+
+#### Conclusion
+
+Rohan Khandelwal's work in March 2025 displayed a solid mix of technical expertise, problem-solving, and proactive learning. His focus on deploying image processing APIs and improving ML models for business applications contributed significantly to project advancements. With continued focus on optimizing processes and expanding his cloud and ML knowledge, Rohan is well on his way to becoming a key contributor to future projects.

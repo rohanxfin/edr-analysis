@@ -1,0 +1,1356 @@
+from,to,date,subject,content
+Neeraj Chauhan <neeraj.chauhan@nxfin.in>,Nikhil Raj <nikhil.raj@nxfin.in>,"16 Dec 2024, 21:56",Re: EDR,
+Neeraj Chauhan <neeraj.chauhan@nxfin.in>,Shraddha Nand <shraddha.nand@nxfin.in>,"16 Dec 2024, 22:19",Re: December EDR : Shraddhanand,
+Neeraj Chauhan <neeraj.chauhan@nxfin.in>,Product Development EDR <pdedr@nxfin.in>,"17 Dec 2024, 02:05",Website filters,"Please review 
+
+1. Locations appearing that has no cars. 
+We should not have locations appearing on home page of there are less than 10 cars for that place. Else we can have larger groupings like state. 
+
+2. Some cases the old list is not refreshing, when a location is selected that has no cars Lome Bhatinda, and if prior location was Jaipur, it would show 36 cars in Bhatinda while showing Jaipur inventory. 
+
+
+3.City Clusters need to be reworked. For example Panchkuka should show. Chandigarh cars and Noida should show Delhi NCr cars. 
+
+4. Some listings are appearing without the seller / dealership name
+
+5. Loan amount / EMI / Downpayment  
+
+Regards"
+Neeraj Chauhan <neeraj.chauhan@nxfin.in>,Komal Gupta <komal.gupta@nxfin.in>,"17 Dec 2024, 21:31",Re: EDR,
+Neeraj Chauhan <neeraj.chauhan@nxfin.in>,Anshul Gupta <anshul.gupta@nxfin.in>,"21 Dec 2024, 02:10",Re: EDR,
+Neeraj Chauhan <neeraj.chauhan@nxfin.in>,Nikhil Raj <nikhil.raj@nxfin.in>,"28 Dec 2024, 03:14",Re: EDR,
+Neeraj Chauhan <neeraj.chauhan@nxfin.in>,Rohan Khandelwal <rohan.khandelwal@nxfin.in>,"15 Jan 2025, 22:44",Re: EDR : Rohan Khandelwal,"Thanks Rohan
+
+While you start please sow and sometime in understanding the approach we have adopted in selecting variants in our listings as these probably will need to relate to pricing data obtained from diverse sources. 
+
+Any price discovery mechanism must take the accurate variant in account, there should not be any contamination across variants. 
+
+
+> On 15 Jan 2025, at 13:59, Rohan Khandelwal <rohan.khandelwal@nxfin.in> wrote:
+> 
+> ﻿
+> Dear Team,
+> 
+> Please find below the update on my work:
+> 
+> Yesterday's Work (14th Jan):
+> 
+> Took over the work from Nikhil and reviewed his code and progress.
+> Familiarized myself with the price prediction model, including understanding the various features, terminologies, and factors affecting the price of used cars.
+> Today's Work (15th Jan):
+> 
+> Had a meeting with Nikhil to discuss the issues causing inaccuracies in the model.
+> Discovered that the previous model was highly inaccurate due to several factors and needed to restart from scratch, got a nice standpoint of blockers that Nikhil had.
+> Trained a few new models to establish baseline accuracy using the existing data.
+> Added new relevant features from the India Car Database to improve the model.
+>         Results:  By retraining the model, I have reduced the error from the previous work by 30% (Much more to do)
+> 
+> Plan for Tomorrow (16th Jan):
+> 
+> Create a structured plan to address the price prediction model in steps.
+> Review additional data available (and scrape more if needed) to include in the model training.
+> Explore how to handle the """"Variant"""" column more effectively.
+> Continue with today's work.
+> Consider building smaller models for each car """"Make"""" to assess if this approach improves accuracy at least in smaller view.
+> 
+> 
+> Best regards,
+> Rohan Khandelwal"
+Neeraj Chauhan <neeraj.chauhan@nxfin.in>,Rohan Khandelwal <rohan.khandelwal@nxfin.in>,"18 Jan 2025, 23:37",Re: EDR : Rohan Khandelwal (18th Jan),"Rohan,
+Any test bed to play around with. 
+
+
+
+> On 18 Jan 2025, at 14:06, Rohan Khandelwal <rohan.khandelwal@nxfin.in> wrote:
+> 
+> ﻿
+> Dear Team,
+> 
+> Please find today's (18th Jan)  work update below:
+> 
+> 1. The Maruti Suzuki price prediction error has been significantly reduced to 15k.
+> - We are now targeting a further reduction to 13k.
+> - Following this, we will add more variants by scraping additional data and enhancing the model's robustness.
+> 
+> 2. The data preparation for the Hyundai Make model training has been completed.
+> 
+> Best regards,
+> Rohan Khandelwal
+>"
+Neeraj Chauhan <neeraj.chauhan@nxfin.in>,Rohan Khandelwal <rohan.khandelwal@nxfin.in>,"23 Jan 2025, 00:45",Re: EDR : Rohan Khandelwal (22nd Jan),"Rohan,
+
+How big is the reference data set, I could not see many variants. Is it
+limited to main models?
+
+Representation looks nice, let's have a demo tomorrow.  What will be needed
+to move this from streamlit to our own hosting for API connectivity.
+
+For EOL edge cases, you may need to have separate logic, in most cases
+price drops significantly irrespective of the make/model during the last 2
+years to life. most price curves will converge around 2-3 lac Rs.
+
+
+
+
+
+On Wed, 22 Jan 2025 at 14:08, Rohan Khandelwal <rohan.khandelwal@nxfin.in>
+wrote:
+
+> *Dear Team,*
+>
+> Here is today's work update:
+>
+>    1. *Refined Model Logic*: Worked on improving the model's logic by
+>    implementing age-specific guardrails to enhance its reliability.
+>    2. *Redesigned Model for Improved Performance*: Redesigned the model
+>    to enhance its performance, especially in handling outliers effectively.
+>    3. *Addressed Extreme Age Conditions*: Focused on handling edge
+>    scenarios involving vehicles of extreme ages.
+>    4. *Car Depreciation Research*: Conducted research on how cars in
+>    India depreciate in value over time to create robust guardrails.
+>       - Check the application here: App Link
+>       <https://appapp-hplxxxqqd4appmfqz68st9x.streamlit.app/>
+>       - https://appapp-hplxxxqqd4appmfqz68st9x.streamlit.app/
+>
+> *Tomorrow's Plan*:
+>
+>    1. Handle edge cases for further accuracy.
+>    2. Implement NCR-specific rules for diesel and petrol vehicles.
+>    3. Continue refining the model for perfection.
+>
+> Best regards,
+>
+> Rohan Khandelwal
+>"
+Neeraj Chauhan <neeraj.chauhan@nxfin.in>,Anjali Tulani <anjali.tulani@nxfin.in>,"23 Jan 2025, 00:47","Re: Anjali (22 January,2025)","Anjali,
+
+When can be review some of the outcomes to see if the approach is working.
+
+On Wed, 22 Jan 2025 at 14:04, Anjali Tulani <anjali.tulani@nxfin.in> wrote:
+
+> Hi all,
+>
+>    - Set up whole system for backend, resolving initial issues to ensure
+>    proper functionality as it was not functioning properly.
+>    - Successfully integrated the frontend and backend for the Insights
+>    module, addressing and debugging any errors encountered during the process.
+>    - Contributed to the development of the Insights feature by writing a
+>    portion of the code in JavaScript and actively working on its
+>    implementation.
+>
+>"
+Neeraj Chauhan <neeraj.chauhan@nxfin.in>,Ragini Pant <ragini.pant@nxfin.in>,"23 Jan 2025, 00:48",Re: EDR : Ragini (22nd Jan),"Ragini,
+
+We may need to revisit the UI design for the Insight visualization.  Please
+share what's your current reference.
+
+On Wed, 22 Jan 2025 at 14:00, Ragini Pant <ragini.pant@nxfin.in> wrote:
+
+> Hi all,
+> Today's updates:
+>
+> 1. Worked on enhancing the visualization of the latest data, focusing on
+> improving clarity and exploring additional user presentation elements.
+> 2. Attempted to resolve Streamlit issues on my device to progress with the
+> video automation project.
+> 3. Aimed to upgrade the previous visualization for a more refined and
+> impactful user experience.
+>"
+Neeraj Chauhan <neeraj.chauhan@nxfin.in>,Anjali Tulani <anjali.tulani@nxfin.in>,"27 Jan 2025, 20:37",Re: Anjali 27 January,"Let’s have a look at how is it looking like  tomorrow morning. 
+
+
+
+> On 27 Jan 2025, at 19:11, Anjali Tulani <anjali.tulani@nxfin.in> wrote:
+> 
+> ﻿
+> Worked on the frontend development of the insights module.
+> Currently working on implementing functionalities for the insights graph."
+Neeraj Chauhan <neeraj.chauhan@nxfin.in>,Komal Gupta <komal.gupta@nxfin.in>,"27 Jan 2025, 21:08",Re: EDR,"The line needed to start with Nxcar. 
+
+
+> On 27 Jan 2025, at 14:11, Komal Gupta <komal.gupta@nxfin.in> wrote:
+> 
+> ﻿
+> Hi all,
+> Today's Update -:
+> Completed hero section video.
+> Discussed 3D pie chart with Shradhanand : need to explore animations for that.
+> Completed the insight content for app and web app.
+> Working on the carscope redesigning.
+> Tomorrow's Tasks:
+> Work on the carscope  redesigning.
+> I have attached prototyped video for the same. Please review and share your feedback.
+> 
+> <Hero Section video 1.mp4>"
+Neeraj Chauhan <neeraj.chauhan@nxfin.in>,Rohan Khandelwal <rohan.khandelwal@nxfin.in>,"27 Jan 2025, 21:09",Re: EDR : Rohan Khandelwal (27th Jan),
+Neeraj Chauhan <neeraj.chauhan@nxfin.in>,Komal Gupta <komal.gupta@nxfin.in>,"02 Feb 2025, 01:50",Re: EDR,"6 is better.
+
+We need to accommodate actual car pics and also dealer logos and images.
+
+On Thu, 30 Jan 2025 at 14:12, Komal Gupta <komal.gupta@nxfin.in> wrote:
+
+> Hi all,
+> Today's Update -:
+>
+>    - Working on the car scope design.
+>
+> Tomorrow's Tasks-:
+>
+>    - Work on the blog page design.
+>
+> I have attached a few car scope designs, Please review and share your
+> feedback.
+>
+>
+> On Wed, 29 Jan 2025 at 18:48, Komal Gupta <komal.gupta@nxfin.in> wrote:
+>
+>> Hi all,
+>> Today's Update -:
+>>
+>>    - Completed the scrolling changes in the buy car.
+>>    - Completed changes in dealer page for app.
+>>    - Working on redesigning car scope.
+>>
+>> Tomorrow's Tasks :
+>>
+>>    - Complete car scope design.
+>>
+>> I have attached car scope designs which will be iterated further, For now
+>> we're liking themes of design 3 & 4. Please review and share your feedback.
+>>
+>> On Tue, 28 Jan 2025 at 11:37, Prakhar Agrawal <prakhar.agrawal@nxfin.in>
+>> wrote:
+>>
+>>> Sir,
+>>> Where in the heading?
+>>>
+>>> Regards
+>>> Prakhar Agrawal
+>>>
+>>> On Tue, 28 Jan, 2025, 01:38 Neeraj Chauhan, <neeraj.chauhan@nxfin.in>
+>>> wrote:
+>>>
+>>>> The line needed to start with Nxcar.
+>>>>
+>>>>
+>>>> On 27 Jan 2025, at 14:11, Komal Gupta <komal.gupta@nxfin.in> wrote:
+>>>>
+>>>> ﻿
+>>>> Hi all,
+>>>> Today's Update -:
+>>>>
+>>>>    - Completed hero section video.
+>>>>    - Discussed 3D pie chart with Shradhanand : need to explore
+>>>>    animations for that.
+>>>>    - Completed the insight content for app and web app.
+>>>>    - Working on the carscope redesigning.
+>>>>
+>>>> Tomorrow's Tasks:
+>>>>
+>>>>    - Work on the carscope  redesigning.
+>>>>
+>>>> I have attached prototyped video for the same. Please review and share
+>>>> your feedback.
+>>>>
+>>>>> <Hero Section video 1.mp4>
+>>>>
+>>>>"
+Neeraj Chauhan <neeraj.chauhan@nxfin.in>,Rohan Khandelwal <rohan.khandelwal@nxfin.in>,"03 Feb 2025, 22:25",Re: EDR : Rohan Khandelwal,
+Neeraj Chauhan <neeraj.chauhan@nxfin.in>,Anjali Tulani <anjali.tulani@nxfin.in>,"04 Feb 2025, 09:38",Re: EDR: -3 February(Anjali),"which pages ?
+
+On Tue, 4 Feb 2025 at 07:17, Anjali Tulani <anjali.tulani@nxfin.in> wrote:
+
+> Hi all,
+> 1) *Implemented Media Queries for Responsiveness*: Introduced media
+> queries to ensure the page's layout and content adapt seamlessly across
+> various devices, enhancing user experience on mobile, tablet, and desktop
+> platforms.
+> 2) *Developed and Integrated Region Buttons*: Added region-specific
+> buttons and implemented their corresponding functionalities, allowing users
+> to easily select and navigate to different regional content.
+>"
+Neeraj Chauhan <neeraj.chauhan@nxfin.in>,Prakhar Agrawal <prakhar.agrawal@nxfin.in>,"05 Feb 2025, 21:36",Re: EDR Feb : Prakhar Agrawal,
+Neeraj Chauhan <neeraj.chauhan@nxfin.in>,Rohan Khandelwal <rohan.khandelwal@nxfin.in>,"12 Feb 2025, 22:23",Re: EDR : Rohan Khandelwal,"When can we start demos to external parties?
+
+
+On Wed, 12 Feb 2025 at 14:48, Rohan Khandelwal <rohan.khandelwal@nxfin.in>
+wrote:
+
+> *Date*: 12th February
+>
+> *Dear Team,*
+>
+> *Work Update*:
+>
+>    - Hosted the prediction app on EC2.
+>    - Addressed latency issues in the code and improved speed by
+>    approximately 80% by implementing lazy loading for the model.
+>    - Fixed the database schema for price prediction and added more
+>    triggers.
+>    - Identified some cars on CarWale whose make, model, and variant were
+>    not in our schema. I will send the list to Prakhar.
+>    - Created the API contract for the Graph API.
+>
+> *Tomorrow's Plan*:
+>
+>    - Integrate the pricing API once the work is completed on the DevOps
+>    side.
+>    - Begin writing the Graph API.
+>
+>
+>
+>
+>
+>
+>
+>
+> On Tue, 11 Feb 2025 at 18:59, Rohan Khandelwal <rohan.khandelwal@nxfin.in>
+> wrote:
+>
+>> *Date:* 11th February
+>>
+>> *Dear Team,*
+>>
+>> *Work Update:*
+>>
+>>    - Created a trigger and resolved the permission issue in
+>>    collaboration with the DevOps team.
+>>    - Successfully hosted a Flask app on my EC2 instance to test and
+>>    observe the API functionality.
+>>    - Shared the code with the DevOps team for further processing.
+>>    - Assisted interns with their Flask and database-related issues.
+>>    - Took over the work from interns related to the Graph API creation.
+>>
+>> *Next Steps:*
+>>
+>>    - Plan to integrate the machine learning model with the backend once
+>>    the DevOps team completes their tasks.
+>>    - Will be working on creating the Flask API for graph data.
+>>
+>> *Regards,*
+>> Rohan Khandelwal
+>>
+>> On Mon, 10 Feb 2025 at 19:24, Rohan Khandelwal <rohan.khandelwal@nxfin.in>
+>> wrote:
+>>
+>>> Date : 10th Feb
+>>> Dear team,
+>>>
+>>> Here is my work update:
+>>> - Sorted database schema and written the code on how to pull the
+>>> relevant data after api call automatically
+>>> - tried and experiment to host app on aws elastic beanstalk on my free
+>>> tier account to get familiarized with aws
+>>>
+>>> next plans:
+>>> - discussion with Devops and prakhar to finalize the api and give it to
+>>> backend team to integrate with web app
+>>>
+>>> Regards,
+>>> Rohan Khandelwal
+>>>
+>>>
+>>>
+>>> On Fri, 7 Feb 2025 at 22:35, Prakhar Agrawal <prakhar.agrawal@nxfin.in>
+>>> wrote:
+>>>
+>>>> You are right. I follow the same. But I haven't received your emails.
+>>>> Please check if they are sent to the correct EDR email group.
+>>>>
+>>>> On Fri, 7 Feb 2025 at 22:30, Rohan Khandelwal <
+>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>
+>>>>> Hi prakhar,
+>>>>>
+>>>>> According to this mail, I thought we have to send our edr in a single
+>>>>> thread everyday so that it can get analysed.
+>>>>>
+>>>>> Hence i am replying everyday to same mail.
+>>>>> Please correct me if i understood wrong
+>>>>>
+>>>>> Regards,
+>>>>> Rohan Khandelwal
+>>>>>
+>>>>>
+>>>>> On Fri, 7 Feb 2025 at 10:25 PM, Prakhar Agrawal <
+>>>>> prakhar.agrawal@nxfin.in> wrote:
+>>>>>
+>>>>>> Rohan,
+>>>>>> Why you did not send EDR Past few days?
+>>>>>>
+>>>>>> Regards
+>>>>>> Prakhar Agrawal
+>>>>>>
+>>>>>>
+>>>>>> On Mon, 3 Feb 2025 at 18:26, Rohan Khandelwal <
+>>>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>>>
+>>>>>>> *Date*: 3rd February
+>>>>>>>
+>>>>>>> *Work Update*:
+>>>>>>>
+>>>>>>>    - The model is performing well for 5 makes and 160 cars. We have
+>>>>>>>    tested its accuracy, and it is predicting in line with CarWale. Although
+>>>>>>>    there is a slight difference at times, the results are consistent.
+>>>>>>>    - The target is now to expand to 15 makes (~228 cars). The makes
+>>>>>>>    we are working with are:
+>>>>>>>       - Maruti Suzuki
+>>>>>>>       - Honda
+>>>>>>>       - Hyundai
+>>>>>>>       - Mahindra
+>>>>>>>       - Tata
+>>>>>>>       - Toyota
+>>>>>>>       - Volkswagen
+>>>>>>>       - Skoda
+>>>>>>>       - BMW
+>>>>>>>       - Audi
+>>>>>>>       - Kia
+>>>>>>>       - Renault
+>>>>>>>       - Jeep
+>>>>>>>       - Ford
+>>>>>>>       - MG
+>>>>>>>    - The model appears to be in a good state. *Please review it and
+>>>>>>>    let me know if there are any aspects that need improvement so I can address
+>>>>>>>    them.*
+>>>>>>>    - Once reviewed, I will begin writing the API.
+>>>>>>>
+>>>>>>> *Testing Link*: Testing Link
+>>>>>>> <https://appapp-hplxxxqqd4appmfqz68st9x.streamlit.app/>
+>>>>>>> *Plan*: The goal is to host a beta version for the top makes with
+>>>>>>> high accuracy by the end of this month.
+>>>>>>>
+>>>>>>> Regards,
+>>>>>>> Rohan Khandelwal
+>>>>>>>
+>>>>>>"
+Neeraj Chauhan <neeraj.chauhan@nxfin.in>,Shraddha Nand <shraddha.nand@nxfin.in>,"12 Feb 2025, 22:26",Re: EDR Feb (Shraddhanand),"Whats the approach, theory and objective behind url naming?
+
+Any reference material / best practices we are following?
+
+On Wed, 12 Feb 2025 at 14:12, Shraddha Nand <shraddha.nand@nxfin.in> wrote:
+
+> Hi all,
+>
+> *Today's Tasks :*
+>
+>
+>    1. Worked on the buy car listing URL -> (50% done , urls are
+>    created on a dummy site[NXCAR]).
+>
+> *Tomorrow's Tasks:*
+>
+>
+>    1. will work on the buy car listing URL -> (need to add URL code in
+>    live website).
+>
+>
+> Regards,
+>
+> *ShraddhanandDeveloper*
+>
+> On Tue, 11 Feb 2025 at 18:41, Shraddha Nand <shraddha.nand@nxfin.in>
+> wrote:
+>
+>> Hi all,
+>>
+>> *Today's Tasks :*
+>>
+>>
+>>    1. Update  calculator -> now interest will start from 9.8% and jump
+>>    of 0.2%.
+>>    2. Meeting regarding sell-car-edit Api (RTO-location, RTO-code) with
+>>    Akshay.
+>>    3. Added loading in the dealer page.
+>>    4. Update button design in individual listing.
+>>    5. On logout took user  sell page issue is fixed.
+>>
+>> *Tomorrow's Tasks:*
+>>
+>>
+>>    1. will work on the remaining rto part in stage 2.
+>>    2. Work on site map (dynamically).
+>>    3. Will add gtm tag on every page as discussed today(11 Feb) with
+>>    Priyanka.
+>>
+>>
+>> Regards,
+>>
+>> *ShraddhanandDeveloper*
+>>
+>> On Mon, 10 Feb 2025 at 23:14, Shraddha Nand <shraddha.nand@nxfin.in>
+>> wrote:
+>>
+>>> Hi all,
+>>>
+>>> *Today's Tasks :*
+>>>
+>>>
+>>>    1. Worked on a calculator -> now interest will start from 9.8%.
+>>>    2. Update animation coming effect in homescreen.
+>>>    3. Meeting regarding sell-car-edit Api (RTO-location) with Akshay.
+>>>    4. Added search in sell form all brands stage.
+>>>    5. Update design of brands in sell form.
+>>>    6. Fixed dealer page button on seller-detail modal.
+>>>    7. Fixed 0.00 google rating in dealer page. (hide when 0.00 rating
+>>>    come)
+>>>
+>>>
+>>>    - *Code pushed in PROD server (now changes will reflect).*
+>>>
+>>> *Tomorrow's Tasks:*
+>>>
+>>>
+>>>    1. will work on the report section part.
+>>>
+>>>
+>>> Regards,
+>>>
+>>> *ShraddhanandDeveloper*
+>>>
+>>> On Fri, 7 Feb 2025 at 18:52, Shraddha Nand <shraddha.nand@nxfin.in>
+>>> wrote:
+>>>
+>>>> Hi all,
+>>>>
+>>>> *Today's Tasks :*
+>>>>
+>>>>
+>>>>    1. Worked on the sell-car-edit part.
+>>>>    2. Worked on the inspection report section in the
+>>>>    individual-listing.
+>>>>    *Code pushed in PROD server (now changes will reflect).*
+>>>>
+>>>> *Tomorrow's Tasks:*
+>>>>
+>>>>
+>>>>    1. Will work on the URL part in the buy section.
+>>>>    2. will work on the report section part.
+>>>>
+>>>>
+>>>> Regards,
+>>>>
+>>>> *ShraddhanandDeveloper*
+>>>>
+>>>> On Thu, 6 Feb 2025 at 18:56, Shraddha Nand <shraddha.nand@nxfin.in>
+>>>> wrote:
+>>>>
+>>>>> Hi all,
+>>>>>
+>>>>> *Today's Tasks :*
+>>>>>
+>>>>>
+>>>>>    1. Updated the down payment part in the individual listing
+>>>>>    calculator section.
+>>>>>    As of now, logic is 1 lakh is the minimum loan amount for any car.
+>>>>>    2. Added Contact Api in dealer page contact and in all dealer
+>>>>>    pages - Request call back button.
+>>>>>    3. Worked on the url part for sharing and google rank.
+>>>>>
+>>>>>    *Code pushed in DEV server (now changes will reflect).*
+>>>>>
+>>>>>
+>>>>> *Tomorrow's Tasks:*
+>>>>>
+>>>>>
+>>>>>    1. Will work on the URL part in the buy section.
+>>>>>    2. will work on the sell-car-edit part.
+>>>>>
+>>>>>
+>>>>> Regards,
+>>>>> *Shraddhanand*
+>>>>>
+>>>>> On Wed, 5 Feb 2025 at 21:31, Shraddha Nand <shraddha.nand@nxfin.in>
+>>>>> wrote:
+>>>>>
+>>>>>> Hi all,
+>>>>>>
+>>>>>> *Today's Tasks :*
+>>>>>>
+>>>>>>
+>>>>>>    1. Update the  home screen animation.
+>>>>>>    2. Worked on down payment part in the calculator.
+>>>>>>
+>>>>>> Code pushed in DEV server (now changes will reflect).
+>>>>>>
+>>>>>> *Tomorrow's Tasks:*
+>>>>>>
+>>>>>>
+>>>>>>    1. Will work on the down payment slider in the calculator.
+>>>>>>
+>>>>>>
+>>>>>> Regards,
+>>>>>> *Shraddhanand*
+>>>>>>
+>>>>>> On Mon, 3 Feb 2025 at 18:37, Shraddha Nand <shraddha.nand@nxfin.in>
+>>>>>> wrote:
+>>>>>>
+>>>>>>> Hi all,
+>>>>>>>
+>>>>>>> *Today's Tasks :*
+>>>>>>>
+>>>>>>>
+>>>>>>>    1. Update Value and culture section in the about us page.
+>>>>>>>    2. Worked New calculator design with down payment.
+>>>>>>>    3. Added input for manual price in the make offer (Individual
+>>>>>>>    listing page).
+>>>>>>>
+>>>>>>> Code pushed in DEV server.
+>>>>>>>
+>>>>>>> *Tomorrow's Tasks:*
+>>>>>>>
+>>>>>>>
+>>>>>>>    1. I wIll work on the homescreen animation.
+>>>>>>>    2. Will integrate the carscope API in a single car page.
+>>>>>>>    3. Will work on the downpayment slider in the calculator.
+>>>>>>>
+>>>>>>>
+>>>>>>> Regards,
+>>>>>>> *Shraddhanand*
+>>>>>>>
+>>>>>>"
+Neeraj Chauhan <neeraj.chauhan@nxfin.in>,Rohan Khandelwal <rohan.khandelwal@nxfin.in>,"20 Feb 2025, 21:49",Re: EDR : Rohan Khandelwal,"Number plate results are quite good. We can try to retain the border.
+
+Please schedule a demo tomorrow. thanks.
+
+On Thu, 20 Feb 2025 at 13:50, Rohan Khandelwal <rohan.khandelwal@nxfin.in>
+wrote:
+
+> Date : 20th Feb
+>
+> Dear team,
+> here is the work update,
+>
+> - Improved the blurring algo
+> - Mounted the Nxcar logo
+> - See the reference images.
+>
+> Next steps
+> - Further refinement of logo implementation
+> - If needed, retrain the model with better dataset
+> - API Creation
+>
+> ** API for price pred and data fetching is fixed (https is working)
+>
+> Regards,
+> Rohan Khandelwal
+>
+>
+>
+>
+>
+>
+>
+> On Wed, 19 Feb 2025 at 18:57, Rohan Khandelwal <rohan.khandelwal@nxfin.in>
+> wrote:
+>
+>> Sure prakhar, will do it.
+>>
+>> On Wed, 19 Feb 2025 at 6:56 PM, Prakhar Agrawal <prakhar.agrawal@nxfin.in>
+>> wrote:
+>>
+>>> Please use logo in brand colour and font with white background.
+>>> Take logo from Komal.
+>>>
+>>> Regards
+>>> Prakhar Agrawal
+>>>
+>>> On Wed, 19 Feb, 2025, 18:53 Rohan Khandelwal, <rohan.khandelwal@nxfin.in>
+>>> wrote:
+>>>
+>>>> Date: 19th February:
+>>>>
+>>>> *Work Update:*
+>>>>
+>>>>    - Completed the unified code and deployed it on AWS for both *pride
+>>>>    prediction* and *fetch car data*. Both services are registered and
+>>>>    functioning under the same domain: *ai.nxcar.in/{end-point}
+>>>>    <http://ai.nxcar.in/%7Bend-point%7D>*.
+>>>>    - Trained a YOLO model for *number plate blurring*. The initial
+>>>>    results look promising—see the samples.
+>>>>    - Further training is required, but due to heavy computational
+>>>>    load, the *GPU crashed multiple times*, causing training
+>>>>    interruptions.
+>>>>    - Additional refinement is needed to improve the *number plate
+>>>>    blurring algorithm*.
+>>>>
+>>>> Next Steps:
+>>>> - Improvise the blurring algo
+>>>> - API for blurring algo
+>>>> - Watermark removal (start)
+>>>> - Price prediction (Refinement ..)
+>>>>
+>>>> Regards,
+>>>> Rohan Khandelwal
+>>>>
+>>>>
+>>>>
+>>>> On Tue, 18 Feb 2025 at 19:11, Rohan Khandelwal <
+>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>
+>>>>> *Date:* 18th February
+>>>>> *Work Update:*
+>>>>>
+>>>>>    - Resolved the issues with both the price prediction and data
+>>>>>    fetching modules to accommodate a new requirement, ensuring the domain
+>>>>>    remains the same while using a different endpoint.
+>>>>>    - Developed an approach to blur the number plate and overlay the
+>>>>>    Nxcar logo. The next step will be training the YOLO base model starting
+>>>>>    tomorrow.
+>>>>>
+>>>>> Regards,
+>>>>>
+>>>>> Rohan Khandelwal
+>>>>>
+>>>>> On Mon, 17 Feb 2025 at 19:24, Rohan Khandelwal <
+>>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>>
+>>>>>> *Date*: 17th February
+>>>>>> *Work Update*:
+>>>>>>
+>>>>>>    - I worked hands-on with number plate detection, blurring, and
+>>>>>>    custom logo augmentation.
+>>>>>>    - The work done by previous interns mainly involved cloning the
+>>>>>>    Git repository and running a prompt, but this approach became redundant and
+>>>>>>    was no longer working.
+>>>>>>    - looked for a custom pretrained YOLO model for number plate
+>>>>>>    identification.
+>>>>>>    - I am currently working on a price prediction model for 450 MMV,
+>>>>>>    using a basic approach (analyzing data and applying simple linear
+>>>>>>    regression). If successful, we expect to reach a prediction of around 450
+>>>>>>    MMV cars, up from the current 260.
+>>>>>>
+>>>>>> *Plan*:
+>>>>>>
+>>>>>>    - Focus on improving the number plate blurring functionality.
+>>>>>>    - Work on perfecting the 450 MMV price prediction model.
+>>>>>>
+>>>>>> *Update*:
+>>>>>>
+>>>>>>    - The APIs for both price prediction and graph generation are now
+>>>>>>    fully completed from my side.
+>>>>>>    - Tomorrow, I will meet with the DevOps team to finalize the
+>>>>>>    development version and create the necessary links.
+>>>>>>
+>>>>>> Regards,
+>>>>>> Rohan Khandelwal
+>>>>>>
+>>>>>> On Fri, 14 Feb 2025 at 18:35, Rohan Khandelwal <
+>>>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>>>
+>>>>>>> *Date:* 14th February
+>>>>>>>
+>>>>>>> *Work Update:*
+>>>>>>>
+>>>>>>>    - Tested and provided the data-fetching API to the DevOps team.
+>>>>>>>    - Worked on improving the model by incorporating more MMV from
+>>>>>>>    the newly scraped data.
+>>>>>>>
+>>>>>>> Next Target:
+>>>>>>> - Number plate blur task
+>>>>>>>
+>>>>>>> *Regards,*
+>>>>>>> Rohan Khandelwal
+>>>>>>>
+>>>>>>> On Thu, 13 Feb 2025 at 18:57, Rohan Khandelwal <
+>>>>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>>>>
+>>>>>>>> Date : 13th Feb.
+>>>>>>>>
+>>>>>>>> Dear Team,
+>>>>>>>>
+>>>>>>>> I hope this message finds you well. Below is my work update:
+>>>>>>>>
+>>>>>>>>    - The API for price prediction has been successfully hosted. I
+>>>>>>>>    will proceed with testing once the work from the frontend and backend teams
+>>>>>>>>    is completed.
+>>>>>>>>    - The API for graph data fetching has been fully developed and
+>>>>>>>>    tested. I will be sending it to the DevOps team tomorrow.
+>>>>>>>>    - I have also crafted some distance guardrails for the price
+>>>>>>>>    prediction API.
+>>>>>>>>
+>>>>>>>> *Next Steps:*
+>>>>>>>>
+>>>>>>>>    - Complete the transfer of both APIs to production.
+>>>>>>>>    - Continuously work on improving model performance over time.
+>>>>>>>>    - Conduct thorough testing of the entire process.
+>>>>>>>>
+>>>>>>>> Best regards,
+>>>>>>>> Rohan Khandelwal
+>>>>>>>>
+>>>>>>>>
+>>>>>>>> On Thu, 13 Feb 2025 at 11:08, Rohan Khandelwal <
+>>>>>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>>>>>
+>>>>>>>>> Hi Sir, I just got approval from the DevOps team. Today, we will
+>>>>>>>>> integrate it into our website, and tomorrow we will test it to ensure it
+>>>>>>>>> works properly.
+>>>>>>>>>
+>>>>>>>>>
+>>>>>>>>> On Thu, 13 Feb 2025 at 02:53, Neeraj Chauhan <
+>>>>>>>>> neeraj.chauhan@nxfin.in> wrote:
+>>>>>>>>>
+>>>>>>>>>> When can we start demos to external parties?
+>>>>>>>>>>
+>>>>>>>>>>
+>>>>>>>>>> On Wed, 12 Feb 2025 at 14:48, Rohan Khandelwal <
+>>>>>>>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>>>>>>>
+>>>>>>>>>>> *Date*: 12th February
+>>>>>>>>>>>
+>>>>>>>>>>> *Dear Team,*
+>>>>>>>>>>>
+>>>>>>>>>>> *Work Update*:
+>>>>>>>>>>>
+>>>>>>>>>>>    - Hosted the prediction app on EC2.
+>>>>>>>>>>>    - Addressed latency issues in the code and improved speed by
+>>>>>>>>>>>    approximately 80% by implementing lazy loading for the model.
+>>>>>>>>>>>    - Fixed the database schema for price prediction and added
+>>>>>>>>>>>    more triggers.
+>>>>>>>>>>>    - Identified some cars on CarWale whose make, model, and
+>>>>>>>>>>>    variant were not in our schema. I will send the list to Prakhar.
+>>>>>>>>>>>    - Created the API contract for the Graph API.
+>>>>>>>>>>>
+>>>>>>>>>>> *Tomorrow's Plan*:
+>>>>>>>>>>>
+>>>>>>>>>>>    - Integrate the pricing API once the work is completed on
+>>>>>>>>>>>    the DevOps side.
+>>>>>>>>>>>    - Begin writing the Graph API.
+>>>>>>>>>>>
+>>>>>>>>>>>
+>>>>>>>>>>>
+>>>>>>>>>>>
+>>>>>>>>>>>
+>>>>>>>>>>>
+>>>>>>>>>>>
+>>>>>>>>>>>
+>>>>>>>>>>> On Tue, 11 Feb 2025 at 18:59, Rohan Khandelwal <
+>>>>>>>>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>>>>>>>>
+>>>>>>>>>>>> *Date:* 11th February
+>>>>>>>>>>>>
+>>>>>>>>>>>> *Dear Team,*
+>>>>>>>>>>>>
+>>>>>>>>>>>> *Work Update:*
+>>>>>>>>>>>>
+>>>>>>>>>>>>    - Created a trigger and resolved the permission issue in
+>>>>>>>>>>>>    collaboration with the DevOps team.
+>>>>>>>>>>>>    - Successfully hosted a Flask app on my EC2 instance to
+>>>>>>>>>>>>    test and observe the API functionality.
+>>>>>>>>>>>>    - Shared the code with the DevOps team for further
+>>>>>>>>>>>>    processing.
+>>>>>>>>>>>>    - Assisted interns with their Flask and database-related
+>>>>>>>>>>>>    issues.
+>>>>>>>>>>>>    - Took over the work from interns related to the Graph API
+>>>>>>>>>>>>    creation.
+>>>>>>>>>>>>
+>>>>>>>>>>>> *Next Steps:*
+>>>>>>>>>>>>
+>>>>>>>>>>>>    - Plan to integrate the machine learning model with the
+>>>>>>>>>>>>    backend once the DevOps team completes their tasks.
+>>>>>>>>>>>>    - Will be working on creating the Flask API for graph data.
+>>>>>>>>>>>>
+>>>>>>>>>>>> *Regards,*
+>>>>>>>>>>>> Rohan Khandelwal
+>>>>>>>>>>>>
+>>>>>>>>>>>> On Mon, 10 Feb 2025 at 19:24, Rohan Khandelwal <
+>>>>>>>>>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>>>>>>>>>
+>>>>>>>>>>>>> Date : 10th Feb
+>>>>>>>>>>>>> Dear team,
+>>>>>>>>>>>>>
+>>>>>>>>>>>>> Here is my work update:
+>>>>>>>>>>>>> - Sorted database schema and written the code on how to pull
+>>>>>>>>>>>>> the relevant data after api call automatically
+>>>>>>>>>>>>> - tried and experiment to host app on aws elastic beanstalk on
+>>>>>>>>>>>>> my free tier account to get familiarized with aws
+>>>>>>>>>>>>>
+>>>>>>>>>>>>> next plans:
+>>>>>>>>>>>>> - discussion with Devops and prakhar to finalize the api and
+>>>>>>>>>>>>> give it to backend team to integrate with web app
+>>>>>>>>>>>>>
+>>>>>>>>>>>>> Regards,
+>>>>>>>>>>>>> Rohan Khandelwal
+>>>>>>>>>>>>>
+>>>>>>>>>>>>>
+>>>>>>>>>>>>>
+>>>>>>>>>>>>> On Fri, 7 Feb 2025 at 22:35, Prakhar Agrawal <
+>>>>>>>>>>>>> prakhar.agrawal@nxfin.in> wrote:
+>>>>>>>>>>>>>
+>>>>>>>>>>>>>> You are right. I follow the same. But I haven't received your
+>>>>>>>>>>>>>> emails. Please check if they are sent to the correct EDR email group.
+>>>>>>>>>>>>>>
+>>>>>>>>>>>>>> On Fri, 7 Feb 2025 at 22:30, Rohan Khandelwal <
+>>>>>>>>>>>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>> Hi prakhar,
+>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>> According to this mail, I thought we have to send our edr in
+>>>>>>>>>>>>>>> a single thread everyday so that it can get analysed.
+>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>> Hence i am replying everyday to same mail.
+>>>>>>>>>>>>>>> Please correct me if i understood wrong
+>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>> Regards,
+>>>>>>>>>>>>>>> Rohan Khandelwal
+>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>> On Fri, 7 Feb 2025 at 10:25 PM, Prakhar Agrawal <
+>>>>>>>>>>>>>>> prakhar.agrawal@nxfin.in> wrote:
+>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>> Rohan,
+>>>>>>>>>>>>>>>> Why you did not send EDR Past few days?
+>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>> Regards
+>>>>>>>>>>>>>>>> Prakhar Agrawal
+>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>> On Mon, 3 Feb 2025 at 18:26, Rohan Khandelwal <
+>>>>>>>>>>>>>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>> *Date*: 3rd February
+>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>> *Work Update*:
+>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>    - The model is performing well for 5 makes and 160
+>>>>>>>>>>>>>>>>>    cars. We have tested its accuracy, and it is predicting in line with
+>>>>>>>>>>>>>>>>>    CarWale. Although there is a slight difference at times, the results are
+>>>>>>>>>>>>>>>>>    consistent.
+>>>>>>>>>>>>>>>>>    - The target is now to expand to 15 makes (~228 cars).
+>>>>>>>>>>>>>>>>>    The makes we are working with are:
+>>>>>>>>>>>>>>>>>       - Maruti Suzuki
+>>>>>>>>>>>>>>>>>       - Honda
+>>>>>>>>>>>>>>>>>       - Hyundai
+>>>>>>>>>>>>>>>>>       - Mahindra
+>>>>>>>>>>>>>>>>>       - Tata
+>>>>>>>>>>>>>>>>>       - Toyota
+>>>>>>>>>>>>>>>>>       - Volkswagen
+>>>>>>>>>>>>>>>>>       - Skoda
+>>>>>>>>>>>>>>>>>       - BMW
+>>>>>>>>>>>>>>>>>       - Audi
+>>>>>>>>>>>>>>>>>       - Kia
+>>>>>>>>>>>>>>>>>       - Renault
+>>>>>>>>>>>>>>>>>       - Jeep
+>>>>>>>>>>>>>>>>>       - Ford
+>>>>>>>>>>>>>>>>>       - MG
+>>>>>>>>>>>>>>>>>    - The model appears to be in a good state. *Please
+>>>>>>>>>>>>>>>>>    review it and let me know if there are any aspects that need improvement so
+>>>>>>>>>>>>>>>>>    I can address them.*
+>>>>>>>>>>>>>>>>>    - Once reviewed, I will begin writing the API.
+>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>> *Testing Link*: Testing Link
+>>>>>>>>>>>>>>>>> <https://appapp-hplxxxqqd4appmfqz68st9x.streamlit.app/>
+>>>>>>>>>>>>>>>>> *Plan*: The goal is to host a beta version for the top
+>>>>>>>>>>>>>>>>> makes with high accuracy by the end of this month.
+>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>> Regards,
+>>>>>>>>>>>>>>>>> Rohan Khandelwal
+>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>"
+Neeraj Chauhan <neeraj.chauhan@nxfin.in>,Ragini Pant <ragini.pant@nxfin.in>,"20 Feb 2025, 21:57",Re: EDR Feb (Ragini Pant),"let's discuss the approach n a call tomorrow.
+
+On Thu, 20 Feb 2025 at 14:30, Ragini Pant <ragini.pant@nxfin.in> wrote:
+
+> Hi all,
+>
+> Today, I focused on analyzing the two datasets provided to me. The main
+> points of the analysis that we will be able to present on the website
+> include:
+>
+>
+> https://docs.google.com/document/d/1PkbvHT9Dskwp7GHXrSJktwkJMvpD5S7uWHuHEhSS21c/edit?usp=sharing
+>
+> To achieve these results, I utilized the following EXCEL formulae:
+>
+> * MAXIFS
+> * MINIFS
+> * COUNTA
+> * COUNTIF
+> * INDEX-MATCH
+> * XLOOKUP
+> * SUMIFS
+> * PIVOT TABLES
+> * CONDITIONAL FORMATTING
+> * DATA VALIDATION
+>
+> Best Regards,
+> Ragini
+>
+>
+>
+> On Wed, 19 Feb 2025 at 18:08, Ragini Pant <ragini.pant@nxfin.in> wrote:
+>
+>> Hi all,
+>>
+>> Following my meeting with Prakhar Sir, I was able to gain valuable
+>> insights into the areas where my previous research could be improved. I
+>> have taken his feedback into consideration and have been working on
+>> addressing those gaps.
+>>
+>> Secondly I focused on analyzing the two datasets provided to me in order
+>> to present a descriptive analysis on the website.
+>>
+>> Best Regards,
+>> Ragini
+>>
+>>
+>>
+>> On Tue, 18 Feb 2025 at 23:47, Ragini Pant <ragini.pant@nxfin.in> wrote:
+>>
+>>> Hi all,
+>>> Following my discussion with Prakhar Sir, I am sharing the research I
+>>> carried out today for the next project assigned to me.
+>>>
+>>>
+>>> https://docs.google.com/document/d/1PkbvHT9Dskwp7GHXrSJktwkJMvpD5S7uWHuHEhSS21c/edit?usp=sharing
+>>>
+>>> On Mon, 10 Feb 2025 at 19:00, Ragini Pant <ragini.pant@nxfin.in> wrote:
+>>>
+>>>> Hi all,
+>>>> Today I
+>>>> 1. Structured how to proceed with the API project.
+>>>> 2. Continued with the API lecture series.
+>>>>
+>>>> Best Regards
+>>>>
+>>>> On Fri, 7 Feb 2025 at 19:00, Ragini Pant <ragini.pant@nxfin.in> wrote:
+>>>>
+>>>>> Hi all,
+>>>>> Today I
+>>>>> 1. Continued working on the API building course.
+>>>>> 2. Discussed with Anjali on how to proceed with the project.
+>>>>>
+>>>>> Best regards
+>>>>>
+>>>>>
+>>>>> On Tue, 4 Feb 2025 at 19:00, Ragini Pant <ragini.pant@nxfin.in> wrote:
+>>>>>
+>>>>>> Hi all,
+>>>>>> Today I continued the API course.
+>>>>>>
+>>>>>> On Tue, 4 Feb 2025 at 11:32, Ragini Pant <ragini.pant@nxfin.in>
+>>>>>> wrote:
+>>>>>>
+>>>>>>> Hi all ,
+>>>>>>>
+>>>>>>>    - Assisted Rohan with data collection and comparison for his
+>>>>>>>    model.
+>>>>>>>    - Continued my API course.
+>>>>>>>
+>>>>>>>"
+Neeraj Chauhan <neeraj.chauhan@nxfin.in>,Rohan Khandelwal <rohan.khandelwal@nxfin.in>,"03 Mar 2025, 13:45",Re: EDR : March : Rohan Khandelwal,"Pls let me know when the price API is on. Rohan you need to get that done.
+
+On Mon, 3 Mar 2025 at 13:45, Rohan Khandelwal <rohan.khandelwal@nxfin.in>
+wrote:
+
+> Date: 3rd March
+>
+> Dear Team,
+>
+> -- Tested OLX watermark removal thoroughly and it works fine.
+> -- Started working to create the flask api and soon to be implemented on
+> CRM side
+> -- Discussed the api contract with Manmohan ji
+> -- The prod level of (price prediction) api will be available by
+> tomorrow (confirmed with Rakesh ji)
+>
+> Regards,
+> Rohan Khandelwal
+>
+>
+>
+>"
+Neeraj Chauhan <neeraj.chauhan@nxfin.in>,Product Development EDR <pdedr@nxfin.in>,"04 Mar 2025, 12:20",Tools for Dealers,"Prakhar,
+
+Let's plan a section on the App and website which has tools for Dealerships
+at once place. ( Or Sellers)
+
+1. Mask the Number plate and Add dealer logo. ( we can offer logo resizing
+option), or nxcar, For Sale or  plain blank fuzzy plate as additional
+options.
+2. Generate Car Scope. ( from Basic Inputs)
+3. Price Prediction:  Nxcar Greenbook ( from our flow)
+4. Generate AI created SoMe content for a car to be listed. ( Blurbs,
+Animated Videos, Posts, You tube video, AI insights)
+5. RC Check/ Data , National Crime Bureau Check, Challan Check
+8. Transfer Document set generation by filling forms once.  (Get a set and
+instructions from Munender)
+9. Inspection Template / Checklist with tick marks and generate report.
+
+
+Please plan and start the design and development. Most are integrations and
+adding links to the separate page."
+Neeraj Chauhan <neeraj.chauhan@nxfin.in>,Rohan Khandelwal <rohan.khandelwal@nxfin.in>,"06 Mar 2025, 15:08",Re: EDR : March : Rohan Khandelwal,
+Neeraj Chauhan <neeraj.chauhan@nxfin.in>,Rohan Khandelwal <rohan.khandelwal@nxfin.in>,"06 Mar 2025, 17:24",Re: EDR : March : Rohan Khandelwal,
+Neeraj Chauhan <neeraj.chauhan@nxfin.in>,Anjali Tulani <anjali.tulani@nxfin.in>,"06 Mar 2025, 21:29",Re: EDR February,"Let's review the output so far.
+
+On Thu, 6 Mar 2025 at 18:36, Anjali Tulani <anjali.tulani@nxfin.in> wrote:
+
+> Hi all,
+>
+> 1) Completed UI of CarScope .
+> 2) Currently, working on integrating API of insights.
+>
+> Regards,
+> Anjali
+>"
+Neeraj Chauhan <neeraj.chauhan@nxfin.in>,Rohan Khandelwal <rohan.khandelwal@nxfin.in>,"07 Mar 2025, 09:40",Re: EDR : March : Rohan Khandelwal,
+Neeraj Chauhan <neeraj.chauhan@nxfin.in>,Rohan Khandelwal <rohan.khandelwal@nxfin.in>,"10 Mar 2025, 15:27",Re: EDR : March : Rohan Khandelwal,"works fine.
+
+Please have provision of having dealer logos on demand in the interface.
+
+Upload logo, resize and use.
+
+
+
+On Mon, 10 Mar 2025 at 15:13, Rohan Khandelwal <rohan.khandelwal@nxfin.in>
+wrote:
+
+> Here is the modified logo change, just plain logo.
+>
+>
+> On Mon, 10 Mar 2025 at 18:41, Rohan Khandelwal <rohan.khandelwal@nxfin.in>
+> wrote:
+>
+>> Date : 10th-MArch
+>> Todays' work
+>> - Improved the """"number plate"""" detection accuracy and now it is predicting
+>> even for slant cars and results are *very* close to spyne.
+>> - see the results images
+>> - we are good to go as of now
+>> - will write its api tomorrow
+>> - the next step is to host both gpu intensive api's (watermark removal
+>> and license plate blur) to either AWS or GCR.
+>>
+>>
+>> Regards,
+>> Rohan Khandelwal
+>>
+>>
+>>
+>>
+>>
+>>
+>> On Fri, 7 Mar 2025 at 19:07, Rohan Khandelwal <rohan.khandelwal@nxfin.in>
+>> wrote:
+>>
+>>> Date : 7-March
+>>>
+>>> Here is my work update:
+>>> - working on hosting Watermark removal to AWS sagemaker (learning
+>>> sagemaker and docker as its new for me and devops team)
+>>> - Refining number plate (it's fine as of now, but working to achieve
+>>> accuracy as of spyne)
+>>>
+>>> Regards,
+>>> Rohan Khandelwal
+>>>
+>>>
+>>>
+>>>
+>>> On Fri, 7 Mar 2025 at 14:10, Rohan Khandelwal <rohan.khandelwal@nxfin.in>
+>>> wrote:
+>>>
+>>>> Sure!
+>>>>
+>>>> On Fri, 7 Mar 2025 at 2:10 PM, Neeraj Chauhan <neeraj.chauhan@nxfin.in>
+>>>> wrote:
+>>>>
+>>>>> Please set up call anytime for the next two hours.
+>>>>>
+>>>>> Say 3 pm IST
+>>>>>
+>>>>> On 7 Mar 2025, at 05:51, Rohan Khandelwal <rohan.khandelwal@nxfin.in>
+>>>>> wrote:
+>>>>>
+>>>>> ﻿
+>>>>> Hi sir,
+>>>>>
+>>>>> -- We can create our own inhouse agentic AI similar to what """"sana
+>>>>> labs"""" do, we just need data, we can train language models to respond
+>>>>> accordingly.
+>>>>> -- We will discuss price prediction in the edge cases, please let me
+>>>>> know of a suitable time.
+>>>>>
+>>>>> Regards.
+>>>>>
+>>>>>
+>>>>>
+>>>>> On Thu, 6 Mar 2025 at 21:54, Neeraj Chauhan <neeraj.chauhan@nxfin.in>
+>>>>> wrote:
+>>>>>
+>>>>>> Agentic  AI for content creation.
+>>>>>>
+>>>>>> User journey on the website when we don’t have available price
+>>>>>> prediction.
+>>>>>>
+>>>>>> Will discuss the design flow how do we handle such cases.
+>>>>>>
+>>>>>>
+>>>>>> On 6 Mar 2025, at 16:11, Rohan Khandelwal <rohan.khandelwal@nxfin.in>
+>>>>>> wrote:
+>>>>>>
+>>>>>> ﻿
+>>>>>> Hi sir,
+>>>>>>
+>>>>>> I’ll look further into it (for watermark removal).
+>>>>>>
+>>>>>> I did not understand what does “user journey means” in context to
+>>>>>> price predict, can u please elaborate it little more?
+>>>>>>
+>>>>>> And I saw “sana labs”, but I’m wondering in which context we want
+>>>>>> agentic ai ? For internal office work? Or for external user?.
+>>>>>>
+>>>>>> Regards,
+>>>>>> Rohan Khandelwal.
+>>>>>>
+>>>>>>
+>>>>>> On Thu, 6 Mar 2025 at 7:38 PM, Neeraj Chauhan <
+>>>>>> neeraj.chauhan@nxfin.in> wrote:
+>>>>>>
+>>>>>>> Yes, Other cloud options  could be ok. We can also put it as a Diane
+>>>>>>> alone tool and link to the website and app.
+>>>>>>>
+>>>>>>> Please see whatever works best.
+>>>>>>>
+>>>>>>> For Pricing prediction we need to see the user journey where we
+>>>>>>> don’t have reasonable data to generate an output.
+>>>>>>>
+>>>>>>>
+>>>>>>>
+>>>>>>>
+>>>>>>> On 6 Mar 2025, at 14:37, Rohan Khandelwal <rohan.khandelwal@nxfin.in>
+>>>>>>> wrote:
+>>>>>>>
+>>>>>>> ﻿
+>>>>>>>
+>>>>>>> Work update:
+>>>>>>> - price prediction is now on prod (working well on 260 MMV's)
+>>>>>>> - the Ec2 is not an optimal solution for watermark removal (too
+>>>>>>> expensive if we take GPU)
+>>>>>>> - Researching for a better GPU option (probably we might have to
+>>>>>>> move to google cloud run as aws does not have any feasible solution)
+>>>>>>> - working on watermark removal especially when car is tilted (at an
+>>>>>>> angle)
+>>>>>>>
+>>>>>>> Regards,
+>>>>>>> Rohan Khandelwal
+>>>>>>>
+>>>>>>>
+>>>>>>> On Wed, 5 Mar 2025 at 19:04, Rohan Khandelwal <
+>>>>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>>>>
+>>>>>>>> Date : 5th Feb
+>>>>>>>>
+>>>>>>>> *Work Update:*
+>>>>>>>>
+>>>>>>>>    - Watermark removal cannot be hosted in pre-prod as image
+>>>>>>>>    processing models require high GPU power, while our EC2 instance does not
+>>>>>>>>    have any built-in GPUs.
+>>>>>>>>    - GPU instances are costly. Rakesh Ji and I were trying to
+>>>>>>>>    resolve the issue, but even with a higher CPU instance, the CPU was
+>>>>>>>>    throttling to 100%.
+>>>>>>>>    - After that, I started looking for other alternatives and
+>>>>>>>>    lightweight models.
+>>>>>>>>    - This has hampered our pretrained models for watermark removal
+>>>>>>>>    (which were almost 100% accurate).
+>>>>>>>>    - Today, I reduced the model size from 230MB to 50MB without
+>>>>>>>>    disturbing accuracy, but even at 50MB, the CPU is unable to process it.
+>>>>>>>>    - I will further try to reduce the model size (if possible),
+>>>>>>>>    and if the CPU still doesn't work, we will have to switch to a GPU instance.
+>>>>>>>>
+>>>>>>>> *Regards,*
+>>>>>>>> Rohan Khandelwal
+>>>>>>>>
+>>>>>>>>
+>>>>>>>>
+>>>>>>>>
+>>>>>>>> On Tue, 4 Mar 2025 at 18:23, Rohan Khandelwal <
+>>>>>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>>>>>
+>>>>>>>>> Date: 4th March
+>>>>>>>>>
+>>>>>>>>> Dear Team,
+>>>>>>>>> Here is my work update,
+>>>>>>>>>
+>>>>>>>>> - completed """"watermark removal"""" api (working in local).
+>>>>>>>>> - """"server side"""" error while hosting it to pre-prod and was
+>>>>>>>>> resolving it since the morning with Dev-Ops.
+>>>>>>>>> - """"server side"""" error is to be resolved by the devops team, hence
+>>>>>>>>> will connect with them tomorrow as well and fix it.
+>>>>>>>>> - """"Price Prediction"""" already working in the dev phase, once we
+>>>>>>>>> resolve server side error of """"watermark removal"""" , we will launch all the
+>>>>>>>>> api's to prod.
+>>>>>>>>>
+>>>>>>>>> Regards,
+>>>>>>>>> Rohan Khandelwal
+>>>>>>>>>
+>>>>>>>>>
+>>>>>>>>>
+>>>>>>>>>
+>>>>>>>>>
+>>>>>>>>> On Mon, 3 Mar 2025 at 18:33, Rohan Khandelwal <
+>>>>>>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>>>>>>
+>>>>>>>>>> Hi sir,
+>>>>>>>>>> It is already done on dev.nxcar.in/sell-car sell form and
+>>>>>>>>>> working fine with 260 MMV's for which we had enough data.
+>>>>>>>>>> U can try it on, i am attaching the supported cars in this mail.
+>>>>>>>>>>
+>>>>>>>>>>
+>>>>>>>>>> On Mon, 3 Mar 2025 at 6:16 PM, Neeraj Chauhan <
+>>>>>>>>>> neeraj.chauhan@nxfin.in> wrote:
+>>>>>>>>>>
+>>>>>>>>>>> Pls let me know when the price API is on. Rohan you need to get
+>>>>>>>>>>> that done.
+>>>>>>>>>>>
+>>>>>>>>>>> On Mon, 3 Mar 2025 at 13:45, Rohan Khandelwal <
+>>>>>>>>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>>>>>>>>
+>>>>>>>>>>>> Date: 3rd March
+>>>>>>>>>>>>
+>>>>>>>>>>>> Dear Team,
+>>>>>>>>>>>>
+>>>>>>>>>>>> -- Tested OLX watermark removal thoroughly and it works fine.
+>>>>>>>>>>>> -- Started working to create the flask api and soon to be
+>>>>>>>>>>>> implemented on CRM side
+>>>>>>>>>>>> -- Discussed the api contract with Manmohan ji
+>>>>>>>>>>>> -- The prod level of (price prediction) api will be
+>>>>>>>>>>>> available by tomorrow (confirmed with Rakesh ji)
+>>>>>>>>>>>>
+>>>>>>>>>>>> Regards,
+>>>>>>>>>>>> Rohan Khandelwal
+>>>>>>>>>>>>
+>>>>>>>>>>>>
+>>>>>>>>>>>>
+>>>>>>>>>>>> <current_supported_MMV (1).xls>
+>>>>>>>
+>>>>>>>"
+Neeraj Chauhan <neeraj.chauhan@nxfin.in>,Ragini Pant <ragini.pant@nxfin.in>,"14 Mar 2025, 08:16",Re: EDR Feb (Ragini Pant),
+Neeraj Chauhan <neeraj.chauhan@nxfin.in>,Anjali Tulani <anjali.tulani@nxfin.in>,"21 Mar 2025, 23:45",Re: EDR march,"Anjali,
+
+Is it now available to be deployed ? 
+
+> On 21 Mar 2025, at 23:12, Anjali Tulani <anjali.tulani@nxfin.in> wrote:
+> 
+> ﻿
+> Hi all, 
+> 
+> Today, I resolved the issues related to insights and completed it. 
+> 
+> Regards
+> Anjali"
+Neeraj Chauhan <neeraj.chauhan@nxfin.in>,Danish Noor <danish.noor@nxfin.in>,"22 Mar 2025, 22:36",Re: EDR Mar (Mohd Danish Noor),
+Neeraj Chauhan <neeraj.chauhan@nxfin.in>,Anjali Tulani <anjali.tulani@nxfin.in>,"26 Mar 2025, 20:26",Re: EDR March,"Can we see a link to the dev to check and test. 
+
+> On 26 Mar 2025, at 17:09, Anjali Tulani <anjali.tulani@nxfin.in> wrote:
+> 
+> ﻿
+> Hi everyone,
+> 
+> Today, I completed the integration of insights and deployed the code in dev mode. Currently, I'm working on improving responsiveness and implementing the changes suggested by Prakhar sir.
+> 
+> Regards,
+> Anjali"
+Neeraj Chauhan <neeraj.chauhan@nxfin.in>,Danish Noor <danish.noor@nxfin.in>,"29 Mar 2025, 22:02",Re: EDR Mar (Mohd Danish Noor),
+Neeraj Chauhan <neeraj.chauhan@nxfin.in>,Danish Noor <danish.noor@nxfin.in>,"30 Mar 2025, 14:10",Re: EDR Mar (Mohd Danish Noor),
+Neeraj Chauhan <neeraj.chauhan@nxfin.in>,Ragini Pant <ragini.pant@nxfin.in>,"31 Mar 2025, 17:27",Re: EDR Feb (Ragini Pant),
