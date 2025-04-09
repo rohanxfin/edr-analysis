@@ -5,7 +5,6 @@ import streamlit as st
 import os
 import io
 import markdown
-from weasyprint import HTML, CSS
 from typing import List, Optional
 
 # Import the functions from app.py directly
