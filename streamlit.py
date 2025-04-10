@@ -106,43 +106,28 @@ from io import BytesIO
 
 def generate_pdf(team: str, member: str, period: str, summary: str) -> bytes:
     """
-    Generates a PDF file from the summary and returns the PDF as a byte string using reportlab.
+    Generates a PDF file from the summary and returns the PDF as a byte string.
     """
-    # Create a memory buffer to hold the PDF data
-    buffer = BytesIO()
-    
-    # Create a canvas object to draw the PDF
-    c = canvas.Canvas(buffer, pagesize=letter)
-    width, height = letter  # 8.5 x 11 inch page size
-    
-    # Set the title
-    c.setFont("Helvetica-Bold", 16)
-    c.drawString(100, height - 50, f"Daily Report Summary - {member} ({team})")
-    
-    # Set the period
-    c.setFont("Helvetica", 12)
-    c.drawString(100, height - 80, f"Period: {period}")
-    
-    # Draw the summary heading
-    c.setFont("Helvetica-Bold", 14)
-    c.drawString(100, height - 120, "Summary:")
-    
-    # Add the summary text
-    c.setFont("Helvetica", 12)
-    y_position = height - 150
-    for line in summary.split("\n"):
-        c.drawString(100, y_position, line)
-        y_position -= 15  # Move down the page for the next line
-    
-    # Finalize the PDF
-    c.showPage()
-    c.save()
+    markdown_text = (
+        f"# Daily Report Summary - {member} ({team})\n\n"
+        f"**Period:** {period}\n\n"
+        "## Summary\n\n"
+        f"{summary}"
+    )
+    html_content = markdown.markdown(markdown_text)
+    css_string = """
+    body {
+        font-family: "Times New Roman", serif;
+        margin: 20px;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        font-family: "Times New Roman", serif;
+    }
+    """
+    css = CSS(string=css_string)
+    pdf_bytes = HTML(string=html_content).write_pdf(stylesheets=[css])
+    return pdf_bytes
 
-    # Get the PDF data from the buffer
-    pdf_data = buffer.getvalue()
-    buffer.close()
-
-    return pdf_data
 
 
 # Sidebar rendering
