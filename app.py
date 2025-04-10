@@ -16,7 +16,7 @@ generation_config = {
     "temperature": 0,
     "top_p": 0.95,
     "top_k": 40,
-    "max_output_tokens": 8192,
+    "max_output_tokens": 15000,
     "response_mime_type": "text/plain",
 }
 
@@ -44,7 +44,7 @@ def summarize_report(team: str, member: str, month: str) -> str:
     
     # Create the Generative AI model using the team prompt
     model = genai.GenerativeModel(
-        model_name="gemini-1.5-flash-8b",
+        model_name="gemini-2.0-flash-thinking-exp-01-21",
         generation_config=generation_config,
         system_instruction=team_prompt
     )
