@@ -6,7 +6,6 @@ import os
 import io
 import markdown
 from typing import List, Optional
-from weasyprint import HTML, CSS
 # Import the functions from app.py directly
 from app import summarize_report, send_email_report
 from constants import emails_list  # Assuming emails_list is defined in constants.py
