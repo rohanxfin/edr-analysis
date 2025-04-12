@@ -108,17 +108,54 @@ from reportlab.platypus import SimpleDocTemplate, Paragraph
 from reportlab.lib.styles import getSampleStyleSheet
 import io
 
+
+
+
+import re
+from io import BytesIO
+from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer
+from reportlab.lib.pagesizes import LETTER
+from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
+
 def generate_pdf(team: str, member: str, period: str, summary: str) -> bytes:
-    buffer = io.BytesIO()
-    doc = SimpleDocTemplate(buffer, pagesize=letter)
+    """
+    Generates a PDF where '**bold text**' is rendered as actual bold
+    (i.e., <b>bold text</b>) rather than showing the '**' asterisks.
+    """
+
+    # Prepare a buffer to hold PDF data
+    buffer = BytesIO()
+    doc = SimpleDocTemplate(buffer, pagesize=LETTER)
+
+    # Get default styles
     styles = getSampleStyleSheet()
-    elements = []
-    elements.append(Paragraph(f"Daily Report Summary - {member} ({team})", styles['Title']))
-    elements.append(Paragraph(f"Period: {period}", styles['Heading2']))
-    elements.append(Paragraph(summary, styles['BodyText']))
-    doc.build(elements)
-    buffer.seek(0)
-    return buffer.getvalue()
+    # Create a story flowable list
+    story = []
+
+    # 1) Title (example)
+    title_str = f"Daily Report Summary - {member} ({team})"
+    story.append(Paragraph(title_str, styles["Title"]))
+    story.append(Spacer(1, 10))
+
+    # 2) Period example
+    period_str = f"Period: {period}"
+    story.append(Paragraph(period_str, styles["Normal"]))
+    story.append(Spacer(1, 12))
+
+    # 3) Convert "**something**" to <b>something</b> in the summary
+    #    Also replace newline characters (\n) with <br/> so we keep line breaks.
+    processed_summary = summary.replace('\n', '<br/>')
+    processed_summary = re.sub(r'\*\*(.*?)\*\*', r'<b>\1</b>', processed_summary)
+
+    # 4) Add final summary paragraph
+    story.append(Paragraph(processed_summary, styles["Normal"]))
+
+    # Build the PDF
+    doc.build(story)
+    pdf_data = buffer.getvalue()
+    buffer.close()
+    return pdf_data
+
 
 # Sidebar rendering
 def render_sidebar() -> tuple:
