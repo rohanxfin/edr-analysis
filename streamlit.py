@@ -98,33 +98,6 @@ def get_members(team: str) -> List[str]:
         st.error(f"Error loading members: {str(e)}")
         return []
 
-<<<<<<< HEAD
-
-
-# def generate_pdf(team: str, member: str, period: str, summary: str) -> bytes:
-#     """
-#     Generates a PDF file from the summary and returns the PDF as a byte string.
-#     """
-#     markdown_text = (
-#         f"# Daily Report Summary - {member} ({team})\n\n"
-#         f"**Period:** {period}\n\n"
-#         "## Summary\n\n"
-#         f"{summary}"
-#     )
-#     html_content = markdown.markdown(markdown_text)
-#     css_string = """
-#     body {
-#         font-family: "Times New Roman", serif;
-#         margin: 20px;
-#     }
-#     h1, h2, h3, h4, h5, h6 {
-#         font-family: "Times New Roman", serif;
-#     }
-#     """
-#     css = CSS(string=css_string)
-#     pdf_bytes = HTML(string=html_content).write_pdf(stylesheets=[css])
-#     return pdf_bytes
-=======
 from reportlab.lib.pagesizes import letter
 from reportlab.lib import colors
 from reportlab.pdfgen import canvas
@@ -136,7 +109,6 @@ from reportlab.lib.styles import getSampleStyleSheet
 import io
 
 
->>>>>>> c00f0cc310ce695f1b60c6099973e99e23b04e7b
 
 
 import re
