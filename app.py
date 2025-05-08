@@ -1,3 +1,6 @@
+
+# app.py
+
 import os
 import base64
 import pandas as pd
@@ -5,22 +8,22 @@ from datetime import datetime
 import google.generativeai as genai
 import smtplib
 from email.message import EmailMessage
-import streamlit as st
-from prompts import get_prompt  # Import team-specific prompt function
+from prompts import get_prompt  # Import our new team-specific prompt function
 
-# Configure the Generative AI API using Streamlit secrets
-genai.configure(api_key=st.secrets["GOOGLE_API_KEY"])
+# Configure the Generative AI API (replace with your actual key)
+genai.configure(api_key="AIzaSyC9MGO2NzRz3gLJ0V1HhIcKhGe3HLN_RQM")
 
-# Generation configuration remains constant
+# Generation configuration remains constant.
 generation_config = {
     "temperature": 0,
     "top_p": 0.95,
     "top_k": 40,
-    "max_output_tokens": 8192,
+    "max_output_tokens": 15000,
     "response_mime_type": "text/plain",
 }
 
 def summarize_report(team: str, member: str, month: str) -> str:
+
     # Build the CSV path for the selected member in the team
     csv_path = os.path.join("data", team, f"{member}.csv")
     
@@ -35,8 +38,8 @@ def summarize_report(team: str, member: str, month: str) -> str:
         month_number = datetime.strptime(month, "%B").month
         df = df[df['datetime'].dt.month == month_number]
 
-    # Combine 'content' and 'date' to build the report content text
-    df["data"] = df["from"] + " " + df["content"] + " " + df["date"]
+    # Combine 'content' and 'date' to build the report content text.
+    df["data"] = df["from"]  + "" + df["content"] + " " + df["date"]
     text_data = "\n".join(df['data'].tolist())
     
     # Get the team-specific prompt from prompts.py
@@ -44,7 +47,7 @@ def summarize_report(team: str, member: str, month: str) -> str:
     
     # Create the Generative AI model using the team prompt
     model = genai.GenerativeModel(
-        model_name="gemini-1.5-flash-8b",
+        model_name="gemini-2.0-flash-thinking-exp-01-21",
         generation_config=generation_config,
         system_instruction=team_prompt
     )
@@ -63,9 +66,9 @@ def send_email_report(recipient_email: str, pdf_data: bytes, member: str, team: 
     Sends an email with the provided PDF attachment.
     Returns True if the email was sent successfully; otherwise, False.
     """
-    # Email configuration from Streamlit secrets
-    sender_email = st.secrets["SENDER_EMAIL"]
-    sender_password = st.secrets["SENDER_PASSWORD"]
+    # Email configuration (ensure you replace these with secure and proper credentials)
+    sender_email = "nx.ai@nxfin.in"       # Replace with your sender email
+    sender_password = "rfhw ennv swoo lono"  # Replace with your email password or secure storage method
     subject = f"Daily Report Summary for {member} ({team}) - {period}"
     body = "Please find attached your daily report summary."
     
@@ -82,6 +85,7 @@ def send_email_report(recipient_email: str, pdf_data: bytes, member: str, team: 
                            filename=f"{member}_report_{period}.pdf")
         
         print("[DEBUG] Connecting to SMTP server...")
+        # Connect to the SMTP server (using Gmail's SMTP server in this example)
         with smtplib.SMTP_SSL("smtp.gmail.com", 465) as smtp:
             smtp.login(sender_email, sender_password)
             smtp.send_message(msg)
@@ -91,53 +95,166 @@ def send_email_report(recipient_email: str, pdf_data: bytes, member: str, team: 
         print(f"[DEBUG] Error sending email: {e}")
         return False
 
-# Streamlit UI
-def main():
-    st.title("Daily Report Generator")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# from flask import Flask, request, jsonify
+# import pandas as pd
+# import os
+# from datetime import datetime
+# import google.generativeai as genai
+# from flask import Flask, request, jsonify
+# import smtplib
+# from email.message import EmailMessage
+# import base64
+
+
+
+# # Initialize Flask app
+# app = Flask(__name__)
+
+# # Route to summarize work reports
+# @app.route('/summarize', methods=['POST'])
+# def summarize():
+#     # Parse input data
+#     data = request.json
+#     team = data.get('team')
+#     member = data.get('member')
+#     month = data.get('month')
+
+#     # Build the CSV path for the selected member in the team
+#     csv_path = os.path.join("data", team, f"{member}.csv")
     
-    # Input fields
-    team = st.selectbox("Select Team", ["TeamA", "TeamB", "TeamC"])  # Replace with your teams
-    member = st.text_input("Enter Member Name")
-    month = st.selectbox("Select Month", ["Overall", "January", "February", "March", "April", "May", "June", 
-                                          "July", "August", "September", "October", "November", "December"])
-    recipient_email = st.text_input("Recipient Email")
+#     # Read CSV file into a DataFrame
+#     df = pd.read_csv(csv_path)
     
-    if st.button("Generate and Send Report"):
-        if member and recipient_email:
-            # Generate summary
-            summary = summarize_report(team, member, month)
-            st.write("### Generated Summary")
-            st.write(summary)
-            
-            # For demo, we'll simulate PDF data (since PDF generation isn't in your code yet)
-            pdf_data = b"Sample PDF content"  # Replace with actual PDF generation logic if needed
-            
-            # Send email
-            success = send_email_report(recipient_email, pdf_data, member, team, month)
-            if success:
-                st.success("Report emailed successfully!")
-            else:
-                st.error("Failed to send email. Check logs for details.")
-        else:
-            st.warning("Please fill in all fields.")
+#     # Parse the 'date' column to datetime using the given format
+#     df['datetime'] = pd.to_datetime(df['date'], format="%d %b %Y, %H:%M")
+    
+#     # Filter by month if not "overall"
+#     if month.lower() != "overall":
+#         month_number = datetime.strptime(month, "%B").month
+#         df = df[df['datetime'].dt.month == month_number]
 
-if __name__ == "__main__":
-    main()
+#     df["data"] = df["content"] + df["date"]
+    
+#     # Combine the report contents into one text string
+#     text_data = "\n".join(df['data'].tolist())
+
+#     # Configure the Generative AI API
+#     genai.configure(api_key="AIzaSyC9MGO2NzRz3gLJ0V1HhIcKhGe3HLN_RQM")
+
+#     # Define generation configuration
+#     generation_config = {
+#         "temperature": 0,
+#         "top_p": 0.95,
+#         "top_k": 40,
+#         "max_output_tokens": 8192,
+#         "response_mime_type": "text/plain",
+#     }
+
+#     # Create the Generative AI model
+#     model = genai.GenerativeModel(
+#         model_name="gemini-1.5-flash-8b",
+#         generation_config=generation_config,
+#         system_instruction=(
+#                 "summarize"
+#         )
+
+#     )
+
+
+#     # Start a chat session with the model
+#     chat_session = model.start_chat(history=[])
+
+#     # Send the text data to the model and get the response
+#     response = chat_session.send_message(text_data)
+
+#     # Extract the summary from the response
+#     summary = response.text
+
+#     print(summary)
+#     # Return the summary as a JSON response
+#     return jsonify({"summary": summary})
 
 
 
 
+# @app.route('/send_email_report', methods=['POST'])
+# def send_email_report_endpoint():
+#     data = request.get_json()
+#     recipient_email = data.get("recipient_email")
+#     pdf_base64 = data.get("pdf_data")
+#     member = data.get("member")
+#     team = data.get("team")
+#     period = data.get("period")
+    
+#     # Validate required fields.
+#     if not all([recipient_email, pdf_base64, member, team, period]):
+#         return jsonify({"error": "Missing one or more required fields."}), 400
+    
+#     try:
+#         # Decode the PDF data from Base64.
+#         pdf_data = base64.b64decode(pdf_base64)
+#     except Exception as e:
+#         return jsonify({"error": f"Invalid PDF data encoding: {e}"}), 400
+
+#     # Email configuration
+#     sender_email = "nx.ai@nxfin.in"       # Replace with your sender email
+#     sender_password = "rfhw ennv swoo lono"  # Replace with your email password or use secure storage
+#     subject = f"Daily Report Summary for {member} ({team}) - {period}"
+#     body = "Please find attached your daily report summary."
+    
+#     try:
+#         print("[DEBUG] Preparing email message in Flask API...")
+#         msg = EmailMessage()
+#         msg["Subject"] = subject
+#         msg["From"] = sender_email
+#         msg["To"] = recipient_email
+#         msg.set_content(body)
+#         msg.add_attachment(pdf_data,
+#                            maintype="application",
+#                            subtype="pdf",
+#                            filename=f"{member}_report_{period}.pdf")
+        
+#         print("[DEBUG] Connecting to SMTP server from Flask API...")
+#         # Example using Gmail SMTP server; adjust if needed.
+#         with smtplib.SMTP_SSL("smtp.gmail.com", 465) as smtp:
+#             smtp.login(sender_email, sender_password)
+#             smtp.send_message(msg)
+#         print("[DEBUG] Email sent successfully via Flask API!")
+#         return jsonify({"message": "Email sent successfully!"}), 200
+#     except Exception as e:
+#         print(f"[DEBUG] Error sending email in Flask API: {e}")
+#         return jsonify({"error": str(e)}), 500
 
 
 
-
-
-
-
-
-
-
-
-
+# # Run the Flask app
+# if __name__ == "__main__":
+#     app.run(debug=True)
 
 

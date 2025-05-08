@@ -100,29 +100,78 @@ def get_members(team: str) -> List[str]:
         st.error(f"Error loading members: {str(e)}")
         return []
 
+
+
+# def generate_pdf(team: str, member: str, period: str, summary: str) -> bytes:
+#     """
+#     Generates a PDF file from the summary and returns the PDF as a byte string.
+#     """
+#     markdown_text = (
+#         f"# Daily Report Summary - {member} ({team})\n\n"
+#         f"**Period:** {period}\n\n"
+#         "## Summary\n\n"
+#         f"{summary}"
+#     )
+#     html_content = markdown.markdown(markdown_text)
+#     css_string = """
+#     body {
+#         font-family: "Times New Roman", serif;
+#         margin: 20px;
+#     }
+#     h1, h2, h3, h4, h5, h6 {
+#         font-family: "Times New Roman", serif;
+#     }
+#     """
+#     css = CSS(string=css_string)
+#     pdf_bytes = HTML(string=html_content).write_pdf(stylesheets=[css])
+#     return pdf_bytes
+
+
+import re
+from io import BytesIO
+from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer
+from reportlab.lib.pagesizes import LETTER
+from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
+
 def generate_pdf(team: str, member: str, period: str, summary: str) -> bytes:
     """
-    Generates a PDF file from the summary and returns the PDF as a byte string.
+    Generates a PDF where '**bold text**' is rendered as actual bold
+    (i.e., <b>bold text</b>) rather than showing the '**' asterisks.
     """
-    markdown_text = (
-        f"# Daily Report Summary - {member} ({team})\n\n"
-        f"**Period:** {period}\n\n"
-        "## Summary\n\n"
-        f"{summary}"
-    )
-    html_content = markdown.markdown(markdown_text)
-    css_string = """
-    body {
-        font-family: "Times New Roman", serif;
-        margin: 20px;
-    }
-    h1, h2, h3, h4, h5, h6 {
-        font-family: "Times New Roman", serif;
-    }
-    """
-    css = CSS(string=css_string)
-    pdf_bytes = HTML(string=html_content).write_pdf(stylesheets=[css])
-    return pdf_bytes
+
+    # Prepare a buffer to hold PDF data
+    buffer = BytesIO()
+    doc = SimpleDocTemplate(buffer, pagesize=LETTER)
+
+    # Get default styles
+    styles = getSampleStyleSheet()
+    # Create a story flowable list
+    story = []
+
+    # 1) Title (example)
+    title_str = f"Daily Report Summary - {member} ({team})"
+    story.append(Paragraph(title_str, styles["Title"]))
+    story.append(Spacer(1, 10))
+
+    # 2) Period example
+    period_str = f"Period: {period}"
+    story.append(Paragraph(period_str, styles["Normal"]))
+    story.append(Spacer(1, 12))
+
+    # 3) Convert "**something**" to <b>something</b> in the summary
+    #    Also replace newline characters (\n) with <br/> so we keep line breaks.
+    processed_summary = summary.replace('\n', '<br/>')
+    processed_summary = re.sub(r'\*\*(.*?)\*\*', r'<b>\1</b>', processed_summary)
+
+    # 4) Add final summary paragraph
+    story.append(Paragraph(processed_summary, styles["Normal"]))
+
+    # Build the PDF
+    doc.build(story)
+    pdf_data = buffer.getvalue()
+    buffer.close()
+    return pdf_data
+
 
 # Sidebar rendering
 def render_sidebar() -> tuple:

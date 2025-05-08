@@ -1354,3 +1354,274 @@ Neeraj Chauhan <neeraj.chauhan@nxfin.in>,Anjali Tulani <anjali.tulani@nxfin.in>,
 Neeraj Chauhan <neeraj.chauhan@nxfin.in>,Danish Noor <danish.noor@nxfin.in>,"29 Mar 2025, 22:02",Re: EDR Mar (Mohd Danish Noor),
 Neeraj Chauhan <neeraj.chauhan@nxfin.in>,Danish Noor <danish.noor@nxfin.in>,"30 Mar 2025, 14:10",Re: EDR Mar (Mohd Danish Noor),
 Neeraj Chauhan <neeraj.chauhan@nxfin.in>,Ragini Pant <ragini.pant@nxfin.in>,"31 Mar 2025, 17:27",Re: EDR Feb (Ragini Pant),
+Neeraj Chauhan <neeraj.chauhan@nxfin.in>,Rohan Khandelwal <rohan.khandelwal@nxfin.in>,"09 Apr 2025, 21:48",Re: EDR : Rohan Khandelwal,"i checked, too generic. I will share the expected output.
+
+
+On Wed, 9 Apr 2025 at 16:03, Rohan Khandelwal <rohan.khandelwal@nxfin.in>
+wrote:
+
+> Date : 9th April
+>
+> - Worked on the prompt side of EDR analysis
+> - Hosted on Streamlit (it need further improvement in pdf formatting , but
+> beta one you can check )
+> - https://edr-analysis.streamlit.app/
+> <https://edr-analysis.streamlit.app/>   (few more refinement needed but
+> you can  checkout)
+> - Done the price prediction analysis and will discuss with prakhar
+> tomorrow morning
+>
+> Regards,
+> Rohan Khandelwal
+>
+> On Tue, 8 Apr 2025 at 19:26, Rohan Khandelwal <rohan.khandelwal@nxfin.in>
+> wrote:
+>
+>> Date : 8th April
+>>
+>> - EDR analysis api logic improved
+>> - Done some reviews of edr analysis with  prakhar sir , and working on
+>> the changes he suggested (different EDR prompting for different team needed)
+>> - testing prompts on gemini and compared with openai
+>> - working towards frontend
+>> - tomorrow will give small demo in the meeting if needed
+>>
+>> Regards,
+>> Rohan Khandelwal
+>>
+>> On Mon, 7 Apr 2025 at 19:25, Rohan Khandelwal <rohan.khandelwal@nxfin.in>
+>> wrote:
+>>
+>>> Date : 7th April
+>>>
+>>> - Changed code logic for fetch car data which leads to 8 foldspeed
+>>> improvement (tested on dev)
+>>> - EDR analysis api completed (prompt need further refinement based on
+>>> the output)
+>>> - Sample march edr summary is attached to this email, please check and
+>>> let me know if some different kind / tone / variety of output needed
+>>>
+>>> Regards,
+>>> Rohan Khandelwal
+>>>
+>>>
+>>> On Thu, 3 Apr 2025 at 19:58, Rohan Khandelwal <rohan.khandelwal@nxfin.in>
+>>> wrote:
+>>>
+>>>> Date : 3rd April
+>>>>
+>>>> - Extracted all the emails across all the edr in a structured way
+>>>> (wrote script) , need more data cleaning though
+>>>> - refactored the code for pusing our as well as scrapped data to db and
+>>>> will push it to db as soon as manmohan ji provide me the listing data.
+>>>>
+>>>> Regards,
+>>>> Rohan Khandelwal
+>>>>
+>>>> On Wed, 2 Apr 2025 at 19:10, Rohan Khandelwal <
+>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>
+>>>>> Date : 2nd April
+>>>>>
+>>>>> - 1350 MMV price prediction is live now (both on dev and prod)
+>>>>> - Prices are accurate
+>>>>> - figured out how to get emails in python for EDR analysis
+>>>>>
+>>>>> Regards,
+>>>>> Rohan Khandelwal
+>>>>>
+>>>>>
+>>>>>
+>>>>>
+>>>>>
+>>>>>
+>>>>> On Tue, 1 Apr 2025 at 19:51, Rohan Khandelwal <
+>>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>>
+>>>>>> Date : 1 April
+>>>>>>
+>>>>>> - 1200 MMV now supported (pre-prod pushed)
+>>>>>> - we used  exponential depreciation for the cars with less data (data
+>>>>>> based)
+>>>>>> - working fine on some manual testing
+>>>>>> - will push to prod after further testing tomorrow by 1st half
+>>>>>> ==============
+>>>>>> Next :
+>>>>>> - Work on EDR analysis
+>>>>>>    - will make a dashboard
+>>>>>> also speed enhancement of the image models as discussed with prakhar
+>>>>>> sir.
+>>>>>>
+>>>>>> Regards,
+>>>>>> Rohan Khandelwal
+>>>>>>
+>>>>>>
+>>>>>>"
+Neeraj Chauhan <neeraj.chauhan@nxfin.in>,Anjali Tulani <anjali.tulani@nxfin.in>,"11 Apr 2025, 22:44",Re: EDR April,"Anjali,
+Implementation looks good, it’s most distinct feature of our listing platform. No one has it. 
+
+
+Can we please change the heading of insight  to insights. 
+
+There are small tweaks, let’s discuss how to make this more relevant and more engaging. May be we start weaving some actionable bits there. 
+
+
+
+> On 11 Apr 2025, at 20:39, Anjali Tulani <anjali.tulani@nxfin.in> wrote:
+> 
+> ﻿
+> Hi everyone,
+> 
+> Today, I implemented some UI changes in Insights based on suggestions from Prakhar Sir and Komal. Additionally, I pushed both the Insights and Sell Form Graph updates to PROD and DEV environments.
+> 
+> Regards,
+> Anjali"
+Neeraj Chauhan <neeraj.chauhan@nxfin.in>,Komal Gupta <komal.gupta@nxfin.in>,"14 Apr 2025, 18:23",Re: EDR-: Komal,"Ok to start.
+
+On Thu, 10 Apr 2025 at 16:39, Komal Gupta <komal.gupta@nxfin.in> wrote:
+
+> Hi All,
+> I have attached a prototyped video of a luxury page, Please review and
+> share your feedback.
+>  Mobile Luxury Page .mp4
+> <https://drive.google.com/file/d/1LP75zV8Egpy_OyXA__I-KsGUCy4W72qk/view?usp=drive_web>
+>  Web Luxury Page.mp4
+> <https://drive.google.com/file/d/1iYzZB1DYPf6k6RejqV9MjsIKAnOIxa6Z/view?usp=drive_web>
+>
+>
+> On Thu, 10 Apr 2025 at 19:19, Komal Gupta <komal.gupta@nxfin.in> wrote:
+>
+>> Hi All,
+>> Today's Tasks-:
+>>
+>>    - Completed luxury buy car page for web, web app and aap.
+>>
+>> Tomorrow's Tasks-:
+>>
+>>    - Work on the sell page UI.
+>>
+>> I have attached designs of the luxury buy car page. Please review and
+>> share your thoughts.
+>>
+>>
+>> On Wed, 9 Apr 2025 at 19:32, Komal Gupta <komal.gupta@nxfin.in> wrote:
+>>
+>>> Hi All,
+>>> Today's Tasks-:
+>>>
+>>>    - Working on the luxury page UI, I need to research more about the
+>>>    luxury color to go with our theme.
+>>>
+>>> Tomorrow's Tasks-:
+>>>
+>>>    - Complete luxury page.
+>>>
+>>>
+>>> On Tue, 8 Apr 2025 at 19:34, Komal Gupta <komal.gupta@nxfin.in> wrote:
+>>>
+>>>> Hi All,
+>>>> Today's Tasks-:
+>>>>
+>>>>    - Completed watermark and number plate removal section for web, web
+>>>>    app and app.
+>>>>    - Working on the luxury page UI.
+>>>>
+>>>> Tomorrow's Tasks-:
+>>>>
+>>>>    - Complete luxury page.
+>>>>
+>>>> I have attached prototyped video for the removal section. Please review
+>>>> and share your feedback.
+>>>>
+>>>> On Mon, 7 Apr 2025 at 19:44, Komal Gupta <komal.gupta@nxfin.in> wrote:
+>>>>
+>>>>> Hi All,
+>>>>> Today's Tasks-:
+>>>>>
+>>>>>    - Working on the watermark removal section on sell form.
+>>>>>    - Completed changes in insight graph for the app.
+>>>>>
+>>>>> Tomorrow's Tasks-:
+>>>>>
+>>>>>    - Complete watermark removal section.
+>>>>>    - Start working on the luxury page.
+>>>>>
+>>>>>
+>>>>> On Fri, 4 Apr 2025 at 21:03, Komal Gupta <komal.gupta@nxfin.in> wrote:
+>>>>>
+>>>>>> Hi All,
+>>>>>> Today's Tasks-:.
+>>>>>>
+>>>>>>    - Completed watermark removal and number plate removal section on
+>>>>>>    the sell form need to make 3 more variations for sample video where one
+>>>>>>    will remove watermark, second one for removal of number plate and third for
+>>>>>>    both.
+>>>>>>
+>>>>>> I have attached a prototype for the same. Please review and share
+>>>>>> your feedback.
+>>>>>>
+>>>>>> On Thu, 3 Apr 2025 at 19:24, Komal Gupta <komal.gupta@nxfin.in>
+>>>>>> wrote:
+>>>>>>
+>>>>>>> Hi All,
+>>>>>>> Today's Tasks-:
+>>>>>>>
+>>>>>>>    - Working on the hero section UI changes and home page changes.
+>>>>>>>    - Completed the sell form changes on the insight graph.
+>>>>>>>
+>>>>>>> Tomorrow's Tasks-:
+>>>>>>>
+>>>>>>>    - Complete homepage designs.
+>>>>>>>
+>>>>>>>
+>>>>>>> On Tue, 1 Apr 2025 at 19:03, Komal Gupta <komal.gupta@nxfin.in>
+>>>>>>> wrote:
+>>>>>>>
+>>>>>>>> Hi All,
+>>>>>>>> Today's Tasks-:
+>>>>>>>>
+>>>>>>>>    - Completed changes in home page and buy car page.
+>>>>>>>>    - Working on the hero section UI change.
+>>>>>>>>
+>>>>>>>> Tomorrow's Tasks-:
+>>>>>>>>
+>>>>>>>>    - Complete hero section design.
+>>>>>>>>
+>>>>>>>>"
+Neeraj Chauhan <neeraj.chauhan@nxfin.in>,Rohan Khandelwal <rohan.khandelwal@nxfin.in>,"15 Apr 2025, 19:34",Re: EDR : Rohan Khandelwal,
+Neeraj Chauhan <neeraj.chauhan@nxfin.in>,Anjali Tulani <anjali.tulani@nxfin.in>,"17 Apr 2025, 23:26",Re: EDR April,"Great. Let’s review few edge cases. 
+Also can you select some good cases to be used for demos and marketing 
+
+> On 17 Apr 2025, at 21:28, Anjali Tulani <anjali.tulani@nxfin.in> wrote:
+> 
+> ﻿
+> Hi everyone,
+> Today I updated the number of data points displayed in all and region in insight graph and added city names along with their corresponding colors below the graph. The changes have been pushed to DEV.
+> Regards,
+> Anjali"
+Neeraj Chauhan <neeraj.chauhan@nxfin.in>,Shraddha Nand <shraddha.nand@nxfin.in>,"22 Apr 2025, 16:28",Re: EDR April (Shraddhanand),
+Neeraj Chauhan <neeraj.chauhan@nxfin.in>,Rohan Khandelwal <rohan.khandelwal@nxfin.in>,"30 Apr 2025, 23:06",Re: EDR : Rohan Khandelwal,
+Neeraj Chauhan <neeraj.chauhan@nxfin.in>,Komal Gupta <komal.gupta@nxfin.in>,"02 May 2025, 22:27",Re: EDR-: Komal,"OK,
+
+Not sure about the dark colours. Please do some user testing.
+
+Sell car Video is ok to go at this point. We should try to enhance it
+further later.
+
+
+
+
+
+On Fri, 2 May 2025 at 16:29, Komal Gupta <komal.gupta@nxfin.in> wrote:
+
+> Hi All,
+> Today's Tasks-:
+>
+>    - Completed changes in video.
+>    - Completed changes for website, web app and app as discussed..
+>
+> I have changed colors of the insight graph to more similar dark toned
+> colors. I have attached an image of the page please review and share your
+> feedback.
+>"
+Neeraj Chauhan <neeraj.chauhan@nxfin.in>,Ragini Pant <ragini.pant@nxfin.in>,"07 May 2025, 21:17",Re: EDR Feb (Ragini Pant),

@@ -2,18 +2,79 @@
 
 # Define different prompt templates for each team.
 
-sales_team_prompt = """        
+sales_team_prompt = """         
 
-"Analyze the monthly work reports from a member of Sales EDR team and provide an in-depth summary focusing on sales performance with the following sections:\n"
-        "- **Completed Sales & Conversions:** List the name and number of all the deals closed, total revenue generated, and key clients acquired. Include conversion rates (e.g., leads to sales) and highlight top-performing products or services.\n"
-        "- **Places Visited:** Summarize all the locations (e.g., cities, regions) visited by the team, noting the frequency of visits and key outcomes (e.g., names , new leads, follow-ups, or deals).\n"
-        "- **Dealers Engaged:** Detail interactions with dealers, including the number of dealers contacted, meetings held, and outcomes (e.g., partnerships formed, orders placed, or issues raised).\n"
-        "- **Ongoing Efforts:** Describe active sales pursuits, such as leads in negotiation, follow-ups scheduled, or pipeline development, with estimated timelines or values where possible.\n"
-        "- **Pending Items:** Highlight stalled deals, missed targets, overdue follow-ups, or unvisited priority locations/dealers, noting reasons for delays if provided.\n"
-        "- **Key Insights:** Analyze patterns in conversion success (e.g., high-performing regions or products), challenges (e.g., dealer resistance, travel constraints), and opportunities (e.g., untapped markets or repeat clients). Suggest one actionable step based on the data.\n"
-        "Use bullet points for each section and limit key insights to 3-4 sentences for depth."
-        "mention all the names of each dealer and the places visited by the team in the summary"
-        """
+Give response in well structure  format with clear insights and key points, i will dispaly on my streamlit frontend,dont write ``` or md or markdown in beginning of the response, just write the response , i will convert the md text by myself.
+Give point wise , with space between each point, and use **bold** for headings and sub headings.
+striclty avoid the usage of words like etc , others , many more as i need full details in the report, no names or numbers should be missed in the report.
+You will be provided with the following monthly work reports:
+{
+monthly_work_reports
+}
+
+Analyze the reports and create a detailed summary in the following format:
+
+**Dealer Visits and Discussions**
+* Total number of dealerships visited (e.g., "Total Dealerships Visited: 25"), including a sample list of notable dealers (e.g., "Notable Dealers: Dealer A, Dealer B, Dealer C, and others").
+* Key topics discussed with dealers (e.g., "Key Discussion Topics: CF cases, insurance, warranties, car scope activities").
+* Specific CF cases collected from dealers, with counts and dealer names (e.g., "CF Cases Collected: 10 cases (3 from Dealer A, 2 from Dealer B, 5 from Dealer C)").
+
+**CF Case Updates**
+* Number of CF cases received from dealers (format: "CF CASE RECEIVE - [number]").
+* Number of CF cases approved (format: "APPROVED CASE - [number]").
+* Number of CF cases disbursed (format: "CF CASE RECEIVED - [number]").
+
+**New Dealer Onboarding**
+* Number of new dealers onboarded (e.g., "New Dealers Onboarded: 5"), with a sample list of names (e.g., "New Dealers: Dealer X, Dealer Y, Dealer Z, and others").
+* Additional onboarding actions taken (e.g., "Onboarding Actions: Created WhatsApp groups, scheduled initial training sessions").
+
+**Market Updates**
+* Overview of market conditions affecting sales (e.g., "Market Conditions: Heavy rainfall impacted sales in the North region. New regulations on vehicle financing are expected next month.").
+* Dealer feedback or interest areas (e.g., "Dealer Feedback: High interest in CF case resolution and extended warranty options.").
+
+**Other**
+* Additional activities not covered above (e.g., "Other Activities: Conducted car scope analysis at Dealer P and Dealer Q. Discussed upcoming CF file changes with Dealer R.").
+
+**Dealer Visit Count**
+* Exact count of visits per dealer in alphabetical order (e.g., "Dealer A: 3", "Dealer B: 2", "Dealer C: 1").
+
+Example:
+
+Input Monthly Work Reports:
+"Visited Dealer A, discussed CF cases and insurance. Visited Dealer B, discussed warranties. Received 5 CF cases. Onboarded Dealer X. Heavy rain affected sales."
+
+Output Summary:
+
+**Dealer Visits and Discussions**
+* Total Dealerships Visited: 2
+* Notable Dealers: Dealer A, Dealer B
+* Key Discussion Topics: CF cases, insurance, warranties
+* CF Cases Collected: Not specified in reports
+
+**CF Case Updates**
+* CF CASE RECEIVE - 5
+* APPROVED CASE - Not specified in reports
+* CF CASE RECEIVED - Not specified in reports
+
+**New Dealer Onboarding**
+* New Dealers Onboarded: 1
+* New Dealers: Dealer X
+* Onboarding Actions: Not specified in reports
+
+**Market Updates**
+* Market Conditions: Heavy rain affected sales.
+* Dealer Feedback: Not specified in reports
+
+**Other**
+* No other activities reported.
+
+**Dealer Visit Count**
+* Dealer A: 1
+* Dealer B: 1
+
+Ensure all data is extracted from the reports. Include specific dealer names and numbers where available, and summarize effectively when data is extensive. Use bullet points under each section as shown.
+The report should be exhaustive, covering all details including names, numbers, dates, locations, car dealer interactions, file statuses, disbursement information, and any other relevant information. Structure the report clearly and logically, potentially using tables or bullet points to organize the data effectively. Ensure all the information from the provided text is included in the report.
+"""
 
 
     
