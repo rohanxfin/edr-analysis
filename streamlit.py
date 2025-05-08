@@ -5,9 +5,7 @@ import streamlit as st
 import os
 import io
 import markdown
-from weasyprint import HTML, CSS
 from typing import List, Optional
-
 # Import the functions from app.py directly
 from app import summarize_report, send_email_report
 from constants import emails_list  # Assuming emails_list is defined in constants.py
@@ -100,6 +98,7 @@ def get_members(team: str) -> List[str]:
         st.error(f"Error loading members: {str(e)}")
         return []
 
+<<<<<<< HEAD
 
 
 # def generate_pdf(team: str, member: str, period: str, summary: str) -> bytes:
@@ -125,6 +124,19 @@ def get_members(team: str) -> List[str]:
 #     css = CSS(string=css_string)
 #     pdf_bytes = HTML(string=html_content).write_pdf(stylesheets=[css])
 #     return pdf_bytes
+=======
+from reportlab.lib.pagesizes import letter
+from reportlab.lib import colors
+from reportlab.pdfgen import canvas
+from io import BytesIO
+
+from reportlab.lib.pagesizes import letter
+from reportlab.platypus import SimpleDocTemplate, Paragraph
+from reportlab.lib.styles import getSampleStyleSheet
+import io
+
+
+>>>>>>> c00f0cc310ce695f1b60c6099973e99e23b04e7b
 
 
 import re
