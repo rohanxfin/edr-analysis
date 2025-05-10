@@ -18,48 +18,51 @@ generation_config = {
     "temperature": 0,
     "top_p": 0.95,
     "top_k": 40,
-    "max_output_tokens": 15000,
+    "max_output_tokens": 8000,
     "response_mime_type": "text/plain",
 }
 
 def summarize_report(team: str, member: str, month: str) -> str:
+    try:
+        # Build the CSV path for the selected member in the team
+        csv_path = os.path.join("data", team, f"{member}.csv")
+        
+        # Read the CSV file into a DataFrame
+        df = pd.read_csv(csv_path)
+        
+        # Parse the 'date' column to datetime using the specified format
+        df['datetime'] = pd.to_datetime(df['date'], format="%d %b %Y, %H:%M")
+        
+        # If month is not "overall", filter by the specified month
+        if month.lower() != "overall":
+            month_number = datetime.strptime(month, "%B").month
+            df = df[df['datetime'].dt.month == month_number]
 
-    # Build the CSV path for the selected member in the team
-    csv_path = os.path.join("data", team, f"{member}.csv")
-    
-    # Read the CSV file into a DataFrame
-    df = pd.read_csv(csv_path)
-    
-    # Parse the 'date' column to datetime using the specified format
-    df['datetime'] = pd.to_datetime(df['date'], format="%d %b %Y, %H:%M")
-    
-    # If month is not "overall", filter by the specified month
-    if month.lower() != "overall":
-        month_number = datetime.strptime(month, "%B").month
-        df = df[df['datetime'].dt.month == month_number]
-
-    # Combine 'content' and 'date' to build the report content text.
-    df["data"] = df["from"]  + "" + df["content"] + " " + df["date"]
-    text_data = "\n".join(df['data'].tolist())
-    
-    # Get the team-specific prompt from prompts.py
-    team_prompt = get_prompt(team)
-    
-    # Create the Generative AI model using the team prompt
-    model = genai.GenerativeModel(
-        model_name="gemini-2.0-flash-thinking-exp-01-21",
-        generation_config=generation_config,
-        system_instruction=team_prompt
-    )
-    
-    # Start a chat session with the model and send the text data
-    chat_session = model.start_chat(history=[])
-    response = chat_session.send_message(text_data)
-    
-    # Extract and return the summary from the response
-    summary = response.text
-    print("Generated Summary:", summary)
-    return summary
+        # Combine 'content' and 'date' to build the report content text
+        df["data"] = df["from"] + " " + df["content"] + " " + df["date"]
+        text_data = "\n".join(df['data'].tolist())
+        
+        # Get the team-specific prompt from prompts.py
+        team_prompt = get_prompt(team)
+        
+        # Create the Generative AI model using the team prompt
+        model = genai.GenerativeModel(
+            model_name="gemini-2.0-flash-thinking-exp-01-21",
+            generation_config=generation_config,
+            system_instruction=team_prompt
+        )
+        
+        # Start a chat session with the model and send the text data
+        chat_session = model.start_chat(history=[])
+        response = chat_session.send_message(text_data)
+        
+        # Extract and return the summary from the response
+        summary = response.text
+        print("Generated Summary:", summary)
+        return summary
+    except Exception as e:
+        print(f"Error in monthly report generation: {str(e)}")
+        return "The EDR's was not in structured form to generate proper summary."
 
 def send_email_report(recipient_email: str, pdf_data: bytes, member: str, team: str, period: str) -> bool:
     """
@@ -67,7 +70,7 @@ def send_email_report(recipient_email: str, pdf_data: bytes, member: str, team: 
     Returns True if the email was sent successfully; otherwise, False.
     """
     # Email configuration (ensure you replace these with secure and proper credentials)
-    sender_email = "nx.ai@nxfin.in"       # Replace with your sender email
+    sender_email = "nx.ai@nxfin.in"  # Replace with your sender email
     sender_password = "rfhw ennv swoo lono"  # Replace with your email password or secure storage method
     subject = f"Daily Report Summary for {member} ({team}) - {period}"
     body = "Please find attached your daily report summary."
@@ -94,7 +97,6 @@ def send_email_report(recipient_email: str, pdf_data: bytes, member: str, team: 
     except Exception as e:
         print(f"[DEBUG] Error sending email: {e}")
         return False
-
 
 
 
