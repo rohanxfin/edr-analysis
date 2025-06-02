@@ -8,10 +8,11 @@ from datetime import datetime
 import google.generativeai as genai
 import smtplib
 from email.message import EmailMessage
+import streamlit as st
 from prompts import get_prompt  # Import our new team-specific prompt function
 
 # Configure the Generative AI API (replace with your actual key)
-genai.configure(api_key="AIzaSyCYsvqn20T0hqpzXXfvacOhm16au1oynaE")
+genai.configure(api_key=st.secrets["GENAI_API_KEY"])
 
 # Generation configuration remains constant.
 generation_config = {
