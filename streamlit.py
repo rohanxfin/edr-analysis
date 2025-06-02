@@ -491,7 +491,7 @@ def render_sidebar() -> tuple:
             )
     
     if selected_member:
-        time_periods = ["February", "March", "April", "Overall"]
+        time_periods = ["February", "March", "April", "May" , "Overall"]
         time_period = st.sidebar.selectbox(
             "3. Select Time Period",
             options=[""] + time_periods,

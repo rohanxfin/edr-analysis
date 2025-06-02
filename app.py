@@ -11,7 +11,7 @@ from email.message import EmailMessage
 from prompts import get_prompt  # Import our new team-specific prompt function
 
 # Configure the Generative AI API (replace with your actual key)
-genai.configure(api_key="AIzaSyC9MGO2NzRz3gLJ0V1HhIcKhGe3HLN_RQM")
+genai.configure(api_key="AIzaSyCYsvqn20T0hqpzXXfvacOhm16au1oynaE")
 
 # Generation configuration remains constant.
 generation_config = {

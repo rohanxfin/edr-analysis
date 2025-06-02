@@ -4,4 +4,4 @@ markdown
 weasyprint
 reportlab
 fpdf
-
+streamlit

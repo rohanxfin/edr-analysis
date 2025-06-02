@@ -1625,3 +1625,1463 @@ On Fri, 2 May 2025 at 16:29, Komal Gupta <komal.gupta@nxfin.in> wrote:
 > feedback.
 >"
 Neeraj Chauhan <neeraj.chauhan@nxfin.in>,Ragini Pant <ragini.pant@nxfin.in>,"07 May 2025, 21:17",Re: EDR Feb (Ragini Pant),
+Neeraj Chauhan <neeraj.chauhan@nxfin.in>,Rohan Khandelwal <rohan.khandelwal@nxfin.in>,"10 May 2025, 02:39",Re: EDR : MAY,
+Neeraj Chauhan <neeraj.chauhan@nxfin.in>,Manvi Khandelwal <manvi.khandelwal@nxfin.in>,"15 May 2025, 22:53",Re: EDR- Manvi,
+Neeraj Chauhan <neeraj.chauhan@nxfin.in>,Rohan Khandelwal <rohan.khandelwal@nxfin.in>,"21 May 2025, 21:44",Re: EDR : MAY,"https://www.nxcar.in/sell-car-edit/17011
+
+1. Number plate masking does not work.
+2. In sell car there is no recommended price
+
+
+
+
+On Wed, 21 May 2025 at 20:47, Rohan Khandelwal <rohan.khandelwal@nxfin.in>
+wrote:
+
+> Date : 21 May
+>
+> - car orientation api written
+> - prompts refinement + testing llm
+>
+>
+> Regards,
+> Rohan
+>
+> On Tue, 20 May 2025 at 8:26 PM, Rohan Khandelwal <
+> rohan.khandelwal@nxfin.in> wrote:
+>
+>> Date : 20 May
+>>
+>> - Writing API for car orientation model
+>> - worked on LLM Model (discussed with manvi and prakahar)
+>> - Moving to fast api from flask
+>>
+>> Regards,
+>> Rohan Khandelwal
+>>
+>> On Mon, 19 May 2025 at 18:41, Rohan Khandelwal <rohan.khandelwal@nxfin.in>
+>> wrote:
+>>
+>>> Date : 17 May
+>>>
+>>> -  Train and tested car orientation model , will write api tomorrow
+>>> -  Discussed and brainstormed on llm project with prakhar and manvi.
+>>> -  Added a vague (irrelevant question) loop in the car ai project.
+>>>
+>>> Regards,
+>>> Rohan Khandelwal
+>>>
+>>>
+>>>
+>>> On Fri, 16 May 2025 at 20:10, Rohan Khandelwal <
+>>> rohan.khandelwal@nxfin.in> wrote:
+>>>
+>>>> Date : 16 May
+>>>>
+>>>>  - Improvised LLM App (changed on how it will react when vague queries
+>>>> will come).
+>>>>  - Tried some different approaches for improvisation of price
+>>>> prediction , read about fewer new algo , how cars depreciate with time
+>>>>  - Discussed with Rakesh ji then learnt how to trigger and setup
+>>>> jenkins job on our GCP hosted applications.
+>>>>
+>>>> Regards,
+>>>> Rohan
+>>>>
+>>>> On Thu, 15 May 2025 at 18:41, Rohan Khandelwal <
+>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>
+>>>>> Date :
+>>>>>
+>>>>> - worked on price prediction.
+>>>>> - researched on ci/cd deployment on GCR.
+>>>>> - worked on the LLM App.
+>>>>>
+>>>>> https://llmf-app-341598202610.us-west1.run.app/
+>>>>>
+>>>>> Regards,
+>>>>> Rohan
+>>>>>
+>>>>>
+>>>>>
+>>>>>
+>>>>>
+>>>>>
+>>>>> On Wed, 14 May 2025 at 21:27, Rohan Khandelwal <
+>>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>>
+>>>>>> Date :14th May
+>>>>>>
+>>>>>> ** Hosted our Car search LLM App on GCP
+>>>>>> - Please have a look, try and test it.
+>>>>>> - It will take little time to load as we are using free resources,
+>>>>>> hence don't press search button again and again while loading.
+>>>>>>
+>>>>>>
+>>>>>> https://llmf-app-341598202610.us-west1.run.app/
+>>>>>>
+>>>>>>
+>>>>>>
+>>>>>>
+>>>>>>
+>>>>>> On Wed, 14 May 2025 at 19:38, Rohan Khandelwal <
+>>>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>>>
+>>>>>>> Date : 14 May
+>>>>>>>
+>>>>>>> - Worked on API writing for LLM
+>>>>>>> - figuring out the way to host LLM App's
+>>>>>>>
+>>>>>>> Regards,
+>>>>>>> Rohan
+>>>>>>>
+>>>>>>>
+>>>>>>> On Tue, 13 May 2025 at 19:34, Rohan Khandelwal <
+>>>>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>>>>
+>>>>>>>> Date : 13 May
+>>>>>>>>
+>>>>>>>> - LLM Demo level 1 ready , will present in tomorrow's meet , and
+>>>>>>>> host it tomorrow for testing purpose.
+>>>>>>>>
+>>>>>>>> Regards,
+>>>>>>>> Rohan
+>>>>>>>>
+>>>>>>>> On Mon, 12 May 2025 at 18:36, Rohan Khandelwal <
+>>>>>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>>>>>
+>>>>>>>>> Date : 12 May
+>>>>>>>>>
+>>>>>>>>> - LLM Work continuation
+>>>>>>>>>
+>>>>>>>>> Regards,
+>>>>>>>>> Rohan Khandelwal
+>>>>>>>>>
+>>>>>>>>> On Sat, 10 May 2025 at 22:37, Rohan Khandelwal <
+>>>>>>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>>>>>>
+>>>>>>>>>> Hi sir,
+>>>>>>>>>>
+>>>>>>>>>> All features has been integrated:
+>>>>>>>>>>
+>>>>>>>>>> 1) daily edr analysis (monthly is also there)
+>>>>>>>>>> 2) manual email option integrated (enter the email of nxfin
+>>>>>>>>>> domail and send the mail)
+>>>>>>>>>> 3) reset button is there , once clicking , old work gone and we
+>>>>>>>>>> can start afresh
+>>>>>>>>>>
+>>>>>>>>>> Regards,
+>>>>>>>>>> Rohan
+>>>>>>>>>>
+>>>>>>>>>>
+>>>>>>>>>>
+>>>>>>>>>> On Sat, 10 May 2025 at 17:44, Rohan Khandelwal <
+>>>>>>>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>>>>>>>
+>>>>>>>>>>> Sure sir, I’ll implement that option as well.
+>>>>>>>>>>>
+>>>>>>>>>>>
+>>>>>>>>>>> On Sat, 10 May 2025 at 4:44 PM, Neeraj Chauhan <
+>>>>>>>>>>> neeraj.chauhan@nxfin.in> wrote:
+>>>>>>>>>>>
+>>>>>>>>>>>> Ok. Can we also add space to add email Ids  ( only Nxfin domain
+>>>>>>>>>>>> ) to send /emails.
+>>>>>>>>>>>>
+>>>>>>>>>>>>
+>>>>>>>>>>>> On 10 May 2025, at 08:10, Rohan Khandelwal <
+>>>>>>>>>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>>>>>>>>>
+>>>>>>>>>>>> ﻿
+>>>>>>>>>>>>
+>>>>>>>>>>>> Hi sir,
+>>>>>>>>>>>>
+>>>>>>>>>>>> Regarding your questions on the EDR report:
+>>>>>>>>>>>>
+>>>>>>>>>>>> 1.  The email report is automatically sent to the person whose
+>>>>>>>>>>>> data you are currently viewing. For instance, if you are looking at Rohan's
+>>>>>>>>>>>> EDR, the report will be sent directly to his email address. This has been
+>>>>>>>>>>>> configured in the backend, so there's no need for manual input on the
+>>>>>>>>>>>> frontend.
+>>>>>>>>>>>>
+>>>>>>>>>>>> 2.  The refresh issue might be specific to viewing on a phone.
+>>>>>>>>>>>> It is working as expected on a computer. However, I will investigate this
+>>>>>>>>>>>> further and aim to implement a fix today.
+>>>>>>>>>>>>
+>>>>>>>>>>>> 3.  Yes, I will include a day-wise summary in the monthly
+>>>>>>>>>>>> report as well.
+>>>>>>>>>>>>
+>>>>>>>>>>>> Regards,
+>>>>>>>>>>>> Rohan
+>>>>>>>>>>>>
+>>>>>>>>>>>> On Sat, 10 May 2025 at 6:09 AM, Neeraj Chauhan <
+>>>>>>>>>>>> neeraj.chauhan@nxfin.in> wrote:
+>>>>>>>>>>>>
+>>>>>>>>>>>>> Thanks Rohan.
+>>>>>>>>>>>>>
+>>>>>>>>>>>>> EDR report,
+>>>>>>>>>>>>>
+>>>>>>>>>>>>> Email is being sent to what address. It’s not asking the email
+>>>>>>>>>>>>> ID.
+>>>>>>>>>>>>>
+>>>>>>>>>>>>> 2. When one report is generated and new member/ period is
+>>>>>>>>>>>>> selected there is no proper way of refreshing / initiating the action.
+>>>>>>>>>>>>> 3. Can we also have a day wise summary in the monthly report.
+>>>>>>>>>>>>>
+>>>>>>>>>>>>>
+>>>>>>>>>>>>> On 9 May 2025, at 16:20, Rohan Khandelwal <
+>>>>>>>>>>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>>>>>>>>>>
+>>>>>>>>>>>>> ﻿
+>>>>>>>>>>>>> Date : 9 May
+>>>>>>>>>>>>>
+>>>>>>>>>>>>> - continued price pred correction [tried to find pattern of
+>>>>>>>>>>>>> mismatch, but there was no relevant pattern , so thinking of further
+>>>>>>>>>>>>> approaches to deal with mismatched prices]
+>>>>>>>>>>>>> - trying to figure out how carwale is predicting price using
+>>>>>>>>>>>>> backtracking
+>>>>>>>>>>>>> - Added sales agent to llm app which will generate lucrative 3
+>>>>>>>>>>>>> line statement for the cars which we display to the users
+>>>>>>>>>>>>>     ex : Discover incredible value with the Kia Seltos HTE 1.5
+>>>>>>>>>>>>> Petrol MT! Available for just 995000.0, these 2023 models with only 28500.0
+>>>>>>>>>>>>> km are an absolute steal. Don't miss out on this opportunity to own a
+>>>>>>>>>>>>> nearly-new Seltos at an unbeatable price!
+>>>>>>>>>>>>> - here is the edr analysis link:
+>>>>>>>>>>>>> https://edr-analysis.streamlit.app/
+>>>>>>>>>>>>>
+>>>>>>>>>>>>> Regards,
+>>>>>>>>>>>>> Rohan
+>>>>>>>>>>>>>
+>>>>>>>>>>>>>
+>>>>>>>>>>>>> On Thu, 8 May 2025 at 18:22, Rohan Khandelwal <
+>>>>>>>>>>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>>>>>>>>>>
+>>>>>>>>>>>>>> Date : 8 May
+>>>>>>>>>>>>>>
+>>>>>>>>>>>>>> - discussion regarding LLM journey with prakhar sir
+>>>>>>>>>>>>>> - started price pred correction
+>>>>>>>>>>>>>> - trying to figure out how carwale is predicting price using
+>>>>>>>>>>>>>> backtracking
+>>>>>>>>>>>>>> - refactored number plate code increased speed by 50% and
+>>>>>>>>>>>>>> pushed to prod
+>>>>>>>>>>>>>> - corrected trim api
+>>>>>>>>>>>>>>
+>>>>>>>>>>>>>> Regards,
+>>>>>>>>>>>>>> Rohan Khandelwal
+>>>>>>>>>>>>>>
+>>>>>>>>>>>>>> On Wed, 7 May 2025 at 18:24, Rohan Khandelwal <
+>>>>>>>>>>>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>> Date : 7 May
+>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>> - Completed NxCar logo augmentation in watermark removal api
+>>>>>>>>>>>>>>> - completed llm reply tracking in langgraph work.
+>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>> On Tue, 6 May 2025 at 19:23, Rohan Khandelwal <
+>>>>>>>>>>>>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>> Date : 6 May
+>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>> - Developed workflow in langgraph [under progress] for car
+>>>>>>>>>>>>>>>> llm application , created thread id's for separate conversations.
+>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>> <image.png>
+>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>> Regards,
+>>>>>>>>>>>>>>>> Rohan Khandelwal
+>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>> On Mon, 5 May 2025 at 19:30, Rohan Khandelwal <
+>>>>>>>>>>>>>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>> Date : 5 May
+>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>> - setup langraph for llm workflow
+>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>> Regards,
+>>>>>>>>>>>>>>>>> Rohan
+>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>> On Fri, 2 May 2025 at 19:16, Rohan Khandelwal <
+>>>>>>>>>>>>>>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>> Date : 2 May
+>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>> - Hosted car trim api [completed] ✅
+>>>>>>>>>>>>>>>>>> - Corrected price - pred for higher prediction issue
+>>>>>>>>>>>>>>>>>> [pushed to prod] ✅
+>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>> Regards,
+>>>>>>>>>>>>>>>>>> Rohan Khandelwal
+>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>> On Thu, 1 May 2025 at 19:53, Rohan Khandelwal <
+>>>>>>>>>>>>>>>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>> Date : 1 May
+>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>> - Completed and tested car trim api
+>>>>>>>>>>>>>>>>>>> - will host tomorrow on GCP
+>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>> Regards,
+>>>>>>>>>>>>>>>>>>> Rohan Khandelwal
+>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>"
+Neeraj Chauhan <neeraj.chauhan@nxfin.in>,Rohan Khandelwal <rohan.khandelwal@nxfin.in>,"21 May 2025, 22:18",Re: EDR : MAY,"Rohan,
+
+
+https://www.nxcar.in/used-car-in/Gurgaon/Maruti%20Suzuki/Swift/VXi/16211
+
+Please check this, the recommended price is 4.75 L, which is higher than
+other cars listed for the same year.
+May be price influenced by Bangalore listings of the previous years.
+
+We need basic analytics guard rails around the recommended price range.
+
+On Wed, 21 May 2025 at 20:47, Rohan Khandelwal <rohan.khandelwal@nxfin.in>
+wrote:
+
+> Date : 21 May
+>
+> - car orientation api written
+> - prompts refinement + testing llm
+>
+>
+> Regards,
+> Rohan
+>
+> On Tue, 20 May 2025 at 8:26 PM, Rohan Khandelwal <
+> rohan.khandelwal@nxfin.in> wrote:
+>
+>> Date : 20 May
+>>
+>> - Writing API for car orientation model
+>> - worked on LLM Model (discussed with manvi and prakahar)
+>> - Moving to fast api from flask
+>>
+>> Regards,
+>> Rohan Khandelwal
+>>
+>> On Mon, 19 May 2025 at 18:41, Rohan Khandelwal <rohan.khandelwal@nxfin.in>
+>> wrote:
+>>
+>>> Date : 17 May
+>>>
+>>> -  Train and tested car orientation model , will write api tomorrow
+>>> -  Discussed and brainstormed on llm project with prakhar and manvi.
+>>> -  Added a vague (irrelevant question) loop in the car ai project.
+>>>
+>>> Regards,
+>>> Rohan Khandelwal
+>>>
+>>>
+>>>
+>>> On Fri, 16 May 2025 at 20:10, Rohan Khandelwal <
+>>> rohan.khandelwal@nxfin.in> wrote:
+>>>
+>>>> Date : 16 May
+>>>>
+>>>>  - Improvised LLM App (changed on how it will react when vague queries
+>>>> will come).
+>>>>  - Tried some different approaches for improvisation of price
+>>>> prediction , read about fewer new algo , how cars depreciate with time
+>>>>  - Discussed with Rakesh ji then learnt how to trigger and setup
+>>>> jenkins job on our GCP hosted applications.
+>>>>
+>>>> Regards,
+>>>> Rohan
+>>>>
+>>>> On Thu, 15 May 2025 at 18:41, Rohan Khandelwal <
+>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>
+>>>>> Date :
+>>>>>
+>>>>> - worked on price prediction.
+>>>>> - researched on ci/cd deployment on GCR.
+>>>>> - worked on the LLM App.
+>>>>>
+>>>>> https://llmf-app-341598202610.us-west1.run.app/
+>>>>>
+>>>>> Regards,
+>>>>> Rohan
+>>>>>
+>>>>>
+>>>>>
+>>>>>
+>>>>>
+>>>>>
+>>>>> On Wed, 14 May 2025 at 21:27, Rohan Khandelwal <
+>>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>>
+>>>>>> Date :14th May
+>>>>>>
+>>>>>> ** Hosted our Car search LLM App on GCP
+>>>>>> - Please have a look, try and test it.
+>>>>>> - It will take little time to load as we are using free resources,
+>>>>>> hence don't press search button again and again while loading.
+>>>>>>
+>>>>>>
+>>>>>> https://llmf-app-341598202610.us-west1.run.app/
+>>>>>>
+>>>>>>
+>>>>>>
+>>>>>>
+>>>>>>
+>>>>>> On Wed, 14 May 2025 at 19:38, Rohan Khandelwal <
+>>>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>>>
+>>>>>>> Date : 14 May
+>>>>>>>
+>>>>>>> - Worked on API writing for LLM
+>>>>>>> - figuring out the way to host LLM App's
+>>>>>>>
+>>>>>>> Regards,
+>>>>>>> Rohan
+>>>>>>>
+>>>>>>>
+>>>>>>> On Tue, 13 May 2025 at 19:34, Rohan Khandelwal <
+>>>>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>>>>
+>>>>>>>> Date : 13 May
+>>>>>>>>
+>>>>>>>> - LLM Demo level 1 ready , will present in tomorrow's meet , and
+>>>>>>>> host it tomorrow for testing purpose.
+>>>>>>>>
+>>>>>>>> Regards,
+>>>>>>>> Rohan
+>>>>>>>>
+>>>>>>>> On Mon, 12 May 2025 at 18:36, Rohan Khandelwal <
+>>>>>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>>>>>
+>>>>>>>>> Date : 12 May
+>>>>>>>>>
+>>>>>>>>> - LLM Work continuation
+>>>>>>>>>
+>>>>>>>>> Regards,
+>>>>>>>>> Rohan Khandelwal
+>>>>>>>>>
+>>>>>>>>> On Sat, 10 May 2025 at 22:37, Rohan Khandelwal <
+>>>>>>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>>>>>>
+>>>>>>>>>> Hi sir,
+>>>>>>>>>>
+>>>>>>>>>> All features has been integrated:
+>>>>>>>>>>
+>>>>>>>>>> 1) daily edr analysis (monthly is also there)
+>>>>>>>>>> 2) manual email option integrated (enter the email of nxfin
+>>>>>>>>>> domail and send the mail)
+>>>>>>>>>> 3) reset button is there , once clicking , old work gone and we
+>>>>>>>>>> can start afresh
+>>>>>>>>>>
+>>>>>>>>>> Regards,
+>>>>>>>>>> Rohan
+>>>>>>>>>>
+>>>>>>>>>>
+>>>>>>>>>>
+>>>>>>>>>> On Sat, 10 May 2025 at 17:44, Rohan Khandelwal <
+>>>>>>>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>>>>>>>
+>>>>>>>>>>> Sure sir, I’ll implement that option as well.
+>>>>>>>>>>>
+>>>>>>>>>>>
+>>>>>>>>>>> On Sat, 10 May 2025 at 4:44 PM, Neeraj Chauhan <
+>>>>>>>>>>> neeraj.chauhan@nxfin.in> wrote:
+>>>>>>>>>>>
+>>>>>>>>>>>> Ok. Can we also add space to add email Ids  ( only Nxfin domain
+>>>>>>>>>>>> ) to send /emails.
+>>>>>>>>>>>>
+>>>>>>>>>>>>
+>>>>>>>>>>>> On 10 May 2025, at 08:10, Rohan Khandelwal <
+>>>>>>>>>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>>>>>>>>>
+>>>>>>>>>>>> ﻿
+>>>>>>>>>>>>
+>>>>>>>>>>>> Hi sir,
+>>>>>>>>>>>>
+>>>>>>>>>>>> Regarding your questions on the EDR report:
+>>>>>>>>>>>>
+>>>>>>>>>>>> 1.  The email report is automatically sent to the person whose
+>>>>>>>>>>>> data you are currently viewing. For instance, if you are looking at Rohan's
+>>>>>>>>>>>> EDR, the report will be sent directly to his email address. This has been
+>>>>>>>>>>>> configured in the backend, so there's no need for manual input on the
+>>>>>>>>>>>> frontend.
+>>>>>>>>>>>>
+>>>>>>>>>>>> 2.  The refresh issue might be specific to viewing on a phone.
+>>>>>>>>>>>> It is working as expected on a computer. However, I will investigate this
+>>>>>>>>>>>> further and aim to implement a fix today.
+>>>>>>>>>>>>
+>>>>>>>>>>>> 3.  Yes, I will include a day-wise summary in the monthly
+>>>>>>>>>>>> report as well.
+>>>>>>>>>>>>
+>>>>>>>>>>>> Regards,
+>>>>>>>>>>>> Rohan
+>>>>>>>>>>>>
+>>>>>>>>>>>> On Sat, 10 May 2025 at 6:09 AM, Neeraj Chauhan <
+>>>>>>>>>>>> neeraj.chauhan@nxfin.in> wrote:
+>>>>>>>>>>>>
+>>>>>>>>>>>>> Thanks Rohan.
+>>>>>>>>>>>>>
+>>>>>>>>>>>>> EDR report,
+>>>>>>>>>>>>>
+>>>>>>>>>>>>> Email is being sent to what address. It’s not asking the email
+>>>>>>>>>>>>> ID.
+>>>>>>>>>>>>>
+>>>>>>>>>>>>> 2. When one report is generated and new member/ period is
+>>>>>>>>>>>>> selected there is no proper way of refreshing / initiating the action.
+>>>>>>>>>>>>> 3. Can we also have a day wise summary in the monthly report.
+>>>>>>>>>>>>>
+>>>>>>>>>>>>>
+>>>>>>>>>>>>> On 9 May 2025, at 16:20, Rohan Khandelwal <
+>>>>>>>>>>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>>>>>>>>>>
+>>>>>>>>>>>>> ﻿
+>>>>>>>>>>>>> Date : 9 May
+>>>>>>>>>>>>>
+>>>>>>>>>>>>> - continued price pred correction [tried to find pattern of
+>>>>>>>>>>>>> mismatch, but there was no relevant pattern , so thinking of further
+>>>>>>>>>>>>> approaches to deal with mismatched prices]
+>>>>>>>>>>>>> - trying to figure out how carwale is predicting price using
+>>>>>>>>>>>>> backtracking
+>>>>>>>>>>>>> - Added sales agent to llm app which will generate lucrative 3
+>>>>>>>>>>>>> line statement for the cars which we display to the users
+>>>>>>>>>>>>>     ex : Discover incredible value with the Kia Seltos HTE 1.5
+>>>>>>>>>>>>> Petrol MT! Available for just 995000.0, these 2023 models with only 28500.0
+>>>>>>>>>>>>> km are an absolute steal. Don't miss out on this opportunity to own a
+>>>>>>>>>>>>> nearly-new Seltos at an unbeatable price!
+>>>>>>>>>>>>> - here is the edr analysis link:
+>>>>>>>>>>>>> https://edr-analysis.streamlit.app/
+>>>>>>>>>>>>>
+>>>>>>>>>>>>> Regards,
+>>>>>>>>>>>>> Rohan
+>>>>>>>>>>>>>
+>>>>>>>>>>>>>
+>>>>>>>>>>>>> On Thu, 8 May 2025 at 18:22, Rohan Khandelwal <
+>>>>>>>>>>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>>>>>>>>>>
+>>>>>>>>>>>>>> Date : 8 May
+>>>>>>>>>>>>>>
+>>>>>>>>>>>>>> - discussion regarding LLM journey with prakhar sir
+>>>>>>>>>>>>>> - started price pred correction
+>>>>>>>>>>>>>> - trying to figure out how carwale is predicting price using
+>>>>>>>>>>>>>> backtracking
+>>>>>>>>>>>>>> - refactored number plate code increased speed by 50% and
+>>>>>>>>>>>>>> pushed to prod
+>>>>>>>>>>>>>> - corrected trim api
+>>>>>>>>>>>>>>
+>>>>>>>>>>>>>> Regards,
+>>>>>>>>>>>>>> Rohan Khandelwal
+>>>>>>>>>>>>>>
+>>>>>>>>>>>>>> On Wed, 7 May 2025 at 18:24, Rohan Khandelwal <
+>>>>>>>>>>>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>> Date : 7 May
+>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>> - Completed NxCar logo augmentation in watermark removal api
+>>>>>>>>>>>>>>> - completed llm reply tracking in langgraph work.
+>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>> On Tue, 6 May 2025 at 19:23, Rohan Khandelwal <
+>>>>>>>>>>>>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>> Date : 6 May
+>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>> - Developed workflow in langgraph [under progress] for car
+>>>>>>>>>>>>>>>> llm application , created thread id's for separate conversations.
+>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>> <image.png>
+>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>> Regards,
+>>>>>>>>>>>>>>>> Rohan Khandelwal
+>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>> On Mon, 5 May 2025 at 19:30, Rohan Khandelwal <
+>>>>>>>>>>>>>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>> Date : 5 May
+>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>> - setup langraph for llm workflow
+>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>> Regards,
+>>>>>>>>>>>>>>>>> Rohan
+>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>> On Fri, 2 May 2025 at 19:16, Rohan Khandelwal <
+>>>>>>>>>>>>>>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>> Date : 2 May
+>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>> - Hosted car trim api [completed] ✅
+>>>>>>>>>>>>>>>>>> - Corrected price - pred for higher prediction issue
+>>>>>>>>>>>>>>>>>> [pushed to prod] ✅
+>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>> Regards,
+>>>>>>>>>>>>>>>>>> Rohan Khandelwal
+>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>> On Thu, 1 May 2025 at 19:53, Rohan Khandelwal <
+>>>>>>>>>>>>>>>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>> Date : 1 May
+>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>> - Completed and tested car trim api
+>>>>>>>>>>>>>>>>>>> - will host tomorrow on GCP
+>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>> Regards,
+>>>>>>>>>>>>>>>>>>> Rohan Khandelwal
+>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>"
+Neeraj Chauhan <neeraj.chauhan@nxfin.in>,Manvi Khandelwal <manvi.khandelwal@nxfin.in>,"23 May 2025, 11:23","=?utf-8?Q?Re:_Spreadsheet_shared_with_you:_=E2=80=98Tech_Bugs?=
+ =?utf-8?Q?=E2=80=99?=",
+Neeraj Chauhan <neeraj.chauhan@nxfin.in>,Anjali Tulani <anjali.tulani@nxfin.in>,"26 May 2025, 21:52",Re: Thank you !,"Anjali,
+
+Thanks for your message. It was nice to have you with us for this period and contribute to the active projects. All the best for your career ahead. 
+
+Regards 
+
+Neeraj 
+
+> On 26 May 2025, at 21:25, Anjali Tulani <anjali.tulani@nxfin.in> wrote:
+> 
+> ﻿
+> Dear Team,
+> 
+> As my internship at Nxcar comes to an end, I want to take a moment to express my sincere gratitude to each one of you for making this journey such a memorable experience.
+> 
+> A heartfelt thank you to Neeraj Sir for giving me this incredible opportunity, and to Prakhar Sir for being a supportive and encouraging manager throughout my time here.
+> 
+>  I’ve truly enjoyed being part of this amazing organization, and I’m grateful for all that I’ve learned along the way.
+> 
+> Special thanks to Rohan and Ragini for being great friends and making my experience even more special. 
+> 
+> Thank you once again to each of you.
+> 
+> Warm regards,
+> Anjali Tulani"
+Neeraj Chauhan <neeraj.chauhan@nxfin.in>,Rohan Khandelwal <rohan.khandelwal@nxfin.in>,"27 May 2025, 16:50",Re: EDR : MAY,"Rohan,
+
+Can you please check as why the number plate masking is not working ?
+
+
+
+On Tue, 27 May 2025 at 15:34, Rohan Khandelwal <rohan.khandelwal@nxfin.in>
+wrote:
+
+> Date :  26-27 May,
+>
+> Working on image processing api hosting + optimisation + restructuring
+>
+> Today deployed , tested and run successfully on local + gcp, tomorrow will
+> host in proper structure on cloud run.
+>
+> Regards,
+> Rohan
+>
+> On Sun, 25 May 2025 at 4:44 PM, Rohan Khandelwal <
+> rohan.khandelwal@nxfin.in> wrote:
+>
+>> Date: 25 May
+>>
+>> - Converted trim and watermark removal api to fast api
+>> - started code unification so that all the image apis would have same url
+>> and different end.
+>>
+>> Regards
+>>
+>> Regards,
+>> Rohan
+>>
+>> On Sat, 24 May 2025 at 7:12 PM, Rohan Khandelwal <
+>> rohan.khandelwal@nxfin.in> wrote:
+>>
+>>> Date : 23 & 24
+>>>
+>>> - fixed error in price prediction.
+>>> - moved and restructured (number plate , car orientation ) api
+>>> completely on fast api, fast api is almost twice faster.
+>>>
+>>> ——————-
+>>>
+>>> Next plans:
+>>> - move rest of the api’s to FastAPI
+>>> - will brain storm and analyse the data for prompt creation for llm
+>>> project.
+>>> - validate ideas with prakhar for further continuation and test the app
+>>> thoroughly.
+>>> - revise and work with price prediction.
+>>> - host all the app to GCP (dev, prod, pre-prod way).
+>>>
+>>> ——————
+>>>
+>>>
+>>>
+>>>
+>>>
+>>> On Thu, 22 May 2025 at 6:37 PM, Rohan Khandelwal <
+>>> rohan.khandelwal@nxfin.in> wrote:
+>>>
+>>>> Date : 22nd
+>>>>
+>>>> Hi Sir,
+>>>> - It is fixed as of now, but I will start round 2 for price prediction
+>>>> next week, I will take the errors into consideration and reiterate the
+>>>> problem in a detailed way including guardrails and other factors as well.
+>>>> - Will update the number plate model for the extremely slanted cars
+>>>> (exceptional cases)
+>>>>
+>>>>
+>>>> EDR :
+>>>> - Completed orientation API
+>>>> - Fixed price prediction  ,change the status code of errors as well.
+>>>>
+>>>>
+>>>> Regards,
+>>>> Rohan
+>>>>
+>>>>
+>>>> On Thu, 22 May 2025 at 01:49, Neeraj Chauhan <neeraj.chauhan@nxfin.in>
+>>>> wrote:
+>>>>
+>>>>>
+>>>>> Rohan,
+>>>>>
+>>>>>
+>>>>>
+>>>>> https://www.nxcar.in/used-car-in/Gurgaon/Maruti%20Suzuki/Swift/VXi/16211
+>>>>>
+>>>>> Please check this, the recommended price is 4.75 L, which is higher
+>>>>> than other cars listed for the same year.
+>>>>> May be price influenced by Bangalore listings of the previous years.
+>>>>>
+>>>>> We need basic analytics guard rails around the recommended price
+>>>>> range.
+>>>>>
+>>>>> On Wed, 21 May 2025 at 20:47, Rohan Khandelwal <
+>>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>>
+>>>>>> Date : 21 May
+>>>>>>
+>>>>>> - car orientation api written
+>>>>>> - prompts refinement + testing llm
+>>>>>>
+>>>>>>
+>>>>>> Regards,
+>>>>>> Rohan
+>>>>>>
+>>>>>> On Tue, 20 May 2025 at 8:26 PM, Rohan Khandelwal <
+>>>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>>>
+>>>>>>> Date : 20 May
+>>>>>>>
+>>>>>>> - Writing API for car orientation model
+>>>>>>> - worked on LLM Model (discussed with manvi and prakahar)
+>>>>>>> - Moving to fast api from flask
+>>>>>>>
+>>>>>>> Regards,
+>>>>>>> Rohan Khandelwal
+>>>>>>>
+>>>>>>> On Mon, 19 May 2025 at 18:41, Rohan Khandelwal <
+>>>>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>>>>
+>>>>>>>> Date : 17 May
+>>>>>>>>
+>>>>>>>> -  Train and tested car orientation model , will write api tomorrow
+>>>>>>>> -  Discussed and brainstormed on llm project with prakhar and manvi.
+>>>>>>>> -  Added a vague (irrelevant question) loop in the car ai project.
+>>>>>>>>
+>>>>>>>> Regards,
+>>>>>>>> Rohan Khandelwal
+>>>>>>>>
+>>>>>>>>
+>>>>>>>>
+>>>>>>>> On Fri, 16 May 2025 at 20:10, Rohan Khandelwal <
+>>>>>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>>>>>
+>>>>>>>>> Date : 16 May
+>>>>>>>>>
+>>>>>>>>>  - Improvised LLM App (changed on how it will react when vague
+>>>>>>>>> queries will come).
+>>>>>>>>>  - Tried some different approaches for improvisation of price
+>>>>>>>>> prediction , read about fewer new algo , how cars depreciate with time
+>>>>>>>>>  - Discussed with Rakesh ji then learnt how to trigger and setup
+>>>>>>>>> jenkins job on our GCP hosted applications.
+>>>>>>>>>
+>>>>>>>>> Regards,
+>>>>>>>>> Rohan
+>>>>>>>>>
+>>>>>>>>> On Thu, 15 May 2025 at 18:41, Rohan Khandelwal <
+>>>>>>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>>>>>>
+>>>>>>>>>> Date :
+>>>>>>>>>>
+>>>>>>>>>> - worked on price prediction.
+>>>>>>>>>> - researched on ci/cd deployment on GCR.
+>>>>>>>>>> - worked on the LLM App.
+>>>>>>>>>>
+>>>>>>>>>> https://llmf-app-341598202610.us-west1.run.app/
+>>>>>>>>>>
+>>>>>>>>>> Regards,
+>>>>>>>>>> Rohan
+>>>>>>>>>>
+>>>>>>>>>>
+>>>>>>>>>>
+>>>>>>>>>>
+>>>>>>>>>>
+>>>>>>>>>>
+>>>>>>>>>> On Wed, 14 May 2025 at 21:27, Rohan Khandelwal <
+>>>>>>>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>>>>>>>
+>>>>>>>>>>> Date :14th May
+>>>>>>>>>>>
+>>>>>>>>>>> ** Hosted our Car search LLM App on GCP
+>>>>>>>>>>> - Please have a look, try and test it.
+>>>>>>>>>>> - It will take little time to load as we are using free
+>>>>>>>>>>> resources, hence don't press search button again and again while loading.
+>>>>>>>>>>>
+>>>>>>>>>>>
+>>>>>>>>>>> https://llmf-app-341598202610.us-west1.run.app/
+>>>>>>>>>>>
+>>>>>>>>>>>
+>>>>>>>>>>>
+>>>>>>>>>>>
+>>>>>>>>>>>
+>>>>>>>>>>> On Wed, 14 May 2025 at 19:38, Rohan Khandelwal <
+>>>>>>>>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>>>>>>>>
+>>>>>>>>>>>> Date : 14 May
+>>>>>>>>>>>>
+>>>>>>>>>>>> - Worked on API writing for LLM
+>>>>>>>>>>>> - figuring out the way to host LLM App's
+>>>>>>>>>>>>
+>>>>>>>>>>>> Regards,
+>>>>>>>>>>>> Rohan
+>>>>>>>>>>>>
+>>>>>>>>>>>>
+>>>>>>>>>>>> On Tue, 13 May 2025 at 19:34, Rohan Khandelwal <
+>>>>>>>>>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>>>>>>>>>
+>>>>>>>>>>>>> Date : 13 May
+>>>>>>>>>>>>>
+>>>>>>>>>>>>> - LLM Demo level 1 ready , will present in tomorrow's meet ,
+>>>>>>>>>>>>> and host it tomorrow for testing purpose.
+>>>>>>>>>>>>>
+>>>>>>>>>>>>> Regards,
+>>>>>>>>>>>>> Rohan
+>>>>>>>>>>>>>
+>>>>>>>>>>>>> On Mon, 12 May 2025 at 18:36, Rohan Khandelwal <
+>>>>>>>>>>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>>>>>>>>>>
+>>>>>>>>>>>>>> Date : 12 May
+>>>>>>>>>>>>>>
+>>>>>>>>>>>>>> - LLM Work continuation
+>>>>>>>>>>>>>>
+>>>>>>>>>>>>>> Regards,
+>>>>>>>>>>>>>> Rohan Khandelwal
+>>>>>>>>>>>>>>
+>>>>>>>>>>>>>> On Sat, 10 May 2025 at 22:37, Rohan Khandelwal <
+>>>>>>>>>>>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>> Hi sir,
+>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>> All features has been integrated:
+>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>> 1) daily edr analysis (monthly is also there)
+>>>>>>>>>>>>>>> 2) manual email option integrated (enter the email of nxfin
+>>>>>>>>>>>>>>> domail and send the mail)
+>>>>>>>>>>>>>>> 3) reset button is there , once clicking , old work gone and
+>>>>>>>>>>>>>>> we can start afresh
+>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>> Regards,
+>>>>>>>>>>>>>>> Rohan
+>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>> On Sat, 10 May 2025 at 17:44, Rohan Khandelwal <
+>>>>>>>>>>>>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>> Sure sir, I’ll implement that option as well.
+>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>> On Sat, 10 May 2025 at 4:44 PM, Neeraj Chauhan <
+>>>>>>>>>>>>>>>> neeraj.chauhan@nxfin.in> wrote:
+>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>> Ok. Can we also add space to add email Ids  ( only Nxfin
+>>>>>>>>>>>>>>>>> domain ) to send /emails.
+>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>> On 10 May 2025, at 08:10, Rohan Khandelwal <
+>>>>>>>>>>>>>>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>> ﻿
+>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>> Hi sir,
+>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>> Regarding your questions on the EDR report:
+>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>> 1.  The email report is automatically sent to the person
+>>>>>>>>>>>>>>>>> whose data you are currently viewing. For instance, if you are looking at
+>>>>>>>>>>>>>>>>> Rohan's EDR, the report will be sent directly to his email address. This
+>>>>>>>>>>>>>>>>> has been configured in the backend, so there's no need for manual input on
+>>>>>>>>>>>>>>>>> the frontend.
+>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>> 2.  The refresh issue might be specific to viewing on a
+>>>>>>>>>>>>>>>>> phone. It is working as expected on a computer. However, I will investigate
+>>>>>>>>>>>>>>>>> this further and aim to implement a fix today.
+>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>> 3.  Yes, I will include a day-wise summary in the monthly
+>>>>>>>>>>>>>>>>> report as well.
+>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>> Regards,
+>>>>>>>>>>>>>>>>> Rohan
+>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>> On Sat, 10 May 2025 at 6:09 AM, Neeraj Chauhan <
+>>>>>>>>>>>>>>>>> neeraj.chauhan@nxfin.in> wrote:
+>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>> Thanks Rohan.
+>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>> EDR report,
+>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>> Email is being sent to what address. It’s not asking the
+>>>>>>>>>>>>>>>>>> email ID.
+>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>> 2. When one report is generated and new member/ period is
+>>>>>>>>>>>>>>>>>> selected there is no proper way of refreshing / initiating the action.
+>>>>>>>>>>>>>>>>>> 3. Can we also have a day wise summary in the monthly
+>>>>>>>>>>>>>>>>>> report.
+>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>> On 9 May 2025, at 16:20, Rohan Khandelwal <
+>>>>>>>>>>>>>>>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>> ﻿
+>>>>>>>>>>>>>>>>>> Date : 9 May
+>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>> - continued price pred correction [tried to find pattern
+>>>>>>>>>>>>>>>>>> of mismatch, but there was no relevant pattern , so thinking of further
+>>>>>>>>>>>>>>>>>> approaches to deal with mismatched prices]
+>>>>>>>>>>>>>>>>>> - trying to figure out how carwale is predicting price
+>>>>>>>>>>>>>>>>>> using backtracking
+>>>>>>>>>>>>>>>>>> - Added sales agent to llm app which will generate
+>>>>>>>>>>>>>>>>>> lucrative 3 line statement for the cars which we display to the users
+>>>>>>>>>>>>>>>>>>     ex : Discover incredible value with the Kia Seltos
+>>>>>>>>>>>>>>>>>> HTE 1.5 Petrol MT! Available for just 995000.0, these 2023 models with only
+>>>>>>>>>>>>>>>>>> 28500.0 km are an absolute steal. Don't miss out on this opportunity to own
+>>>>>>>>>>>>>>>>>> a nearly-new Seltos at an unbeatable price!
+>>>>>>>>>>>>>>>>>> - here is the edr analysis link:
+>>>>>>>>>>>>>>>>>> https://edr-analysis.streamlit.app/
+>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>> Regards,
+>>>>>>>>>>>>>>>>>> Rohan
+>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>> On Thu, 8 May 2025 at 18:22, Rohan Khandelwal <
+>>>>>>>>>>>>>>>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>> Date : 8 May
+>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>> - discussion regarding LLM journey with prakhar sir
+>>>>>>>>>>>>>>>>>>> - started price pred correction
+>>>>>>>>>>>>>>>>>>> - trying to figure out how carwale is predicting price
+>>>>>>>>>>>>>>>>>>> using backtracking
+>>>>>>>>>>>>>>>>>>> - refactored number plate code increased speed by 50%
+>>>>>>>>>>>>>>>>>>> and pushed to prod
+>>>>>>>>>>>>>>>>>>> - corrected trim api
+>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>> Regards,
+>>>>>>>>>>>>>>>>>>> Rohan Khandelwal
+>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>> On Wed, 7 May 2025 at 18:24, Rohan Khandelwal <
+>>>>>>>>>>>>>>>>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>> Date : 7 May
+>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>> - Completed NxCar logo augmentation in watermark
+>>>>>>>>>>>>>>>>>>>> removal api
+>>>>>>>>>>>>>>>>>>>> - completed llm reply tracking in langgraph work.
+>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>> On Tue, 6 May 2025 at 19:23, Rohan Khandelwal <
+>>>>>>>>>>>>>>>>>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>> Date : 6 May
+>>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>> - Developed workflow in langgraph [under progress] for
+>>>>>>>>>>>>>>>>>>>>> car llm application , created thread id's for separate conversations.
+>>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>> <image.png>
+>>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>> Regards,
+>>>>>>>>>>>>>>>>>>>>> Rohan Khandelwal
+>>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>> On Mon, 5 May 2025 at 19:30, Rohan Khandelwal <
+>>>>>>>>>>>>>>>>>>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>>> Date : 5 May
+>>>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>>> - setup langraph for llm workflow
+>>>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>>> Regards,
+>>>>>>>>>>>>>>>>>>>>>> Rohan
+>>>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>>> On Fri, 2 May 2025 at 19:16, Rohan Khandelwal <
+>>>>>>>>>>>>>>>>>>>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>>>> Date : 2 May
+>>>>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>>>> - Hosted car trim api [completed] ✅
+>>>>>>>>>>>>>>>>>>>>>>> - Corrected price - pred for higher prediction issue
+>>>>>>>>>>>>>>>>>>>>>>> [pushed to prod] ✅
+>>>>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>>>> Regards,
+>>>>>>>>>>>>>>>>>>>>>>> Rohan Khandelwal
+>>>>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>>>> On Thu, 1 May 2025 at 19:53, Rohan Khandelwal <
+>>>>>>>>>>>>>>>>>>>>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>>>>> Date : 1 May
+>>>>>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>>>>> - Completed and tested car trim api
+>>>>>>>>>>>>>>>>>>>>>>>> - will host tomorrow on GCP
+>>>>>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>>>>> Regards,
+>>>>>>>>>>>>>>>>>>>>>>>> Rohan Khandelwal
+>>>>>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>>>>"
+Neeraj Chauhan <neeraj.chauhan@nxfin.in>,"Product Development EDR <pdedr@nxfin.in>, Ashish Kumar <ashish.kumar@nxfin.in>","27 May 2025, 16:53",Honda City has Fortuner description,"Please check for other listings as well.
+
+
+https://www.nxcar.in/used-car-in/Bangalore/Honda/City/1.5%20V%20MT%20Exclusive%5B2008-2011%5D/14531
+
+
+This one is what was promoted by Rizwan.
+
+
+
+https://www.nxcar.in/used-car-in/Bangalore/Honda/City/1.5%20V%20MT%20Exclusive%5B2008-2011%5D/14531"
+Neeraj Chauhan <neeraj.chauhan@nxfin.in>,Product Development EDR <pdedr@nxfin.in>,"27 May 2025, 16:56",Difference in Headline and Calculated EMI,"https://www.nxcar.in/used-car-in/Bangalore/Honda/City/1.5%20V%20MT%20Exclusive%5B2008-2011%5D/14531#Calculator
+
+We need to have min 3 years as calculation for loan EMIs.
+
+
+
+[image: Screenshot 2025-05-27 at 4.54.51 PM.png]"
+Neeraj Chauhan <neeraj.chauhan@nxfin.in>,Product Development EDR <pdedr@nxfin.in>,"27 May 2025, 16:59",Sell page Video not rendering : Both Chrome and Safari,[image: Screenshot 2025-05-27 at 4.58.34 PM.png]
+Neeraj Chauhan <neeraj.chauhan@nxfin.in>,Rohan Khandelwal <rohan.khandelwal@nxfin.in>,"27 May 2025, 17:01",Re: EDR : MAY,"Please discuss with the listing team as to why most listings are with
+number plates. Especially the ones that we are promoting on SoMe.
+
+Rizwan, When selecting cars review listings to see if the number plate can
+be masked.
+
+On Tue, 27 May 2025 at 16:59, Rohan Khandelwal <rohan.khandelwal@nxfin.in>
+wrote:
+
+> Hi Sir,
+> Number plate masking is working as i just checked now.
+>
+> On Tue, 27 May 2025 at 20:21, Rohan Khandelwal <rohan.khandelwal@nxfin.in>
+> wrote:
+>
+>> Sure sir checking, give me few minutes
+>>
+>> On Tue, 27 May 2025 at 8:20 PM, Neeraj Chauhan <neeraj.chauhan@nxfin.in>
+>> wrote:
+>>
+>>> Rohan,
+>>>
+>>> Can you please check as why the number plate masking is not working ?
+>>>
+>>>
+>>>
+>>> On Tue, 27 May 2025 at 15:34, Rohan Khandelwal <
+>>> rohan.khandelwal@nxfin.in> wrote:
+>>>
+>>>> Date :  26-27 May,
+>>>>
+>>>> Working on image processing api hosting + optimisation + restructuring
+>>>>
+>>>> Today deployed , tested and run successfully on local + gcp, tomorrow
+>>>> will host in proper structure on cloud run.
+>>>>
+>>>> Regards,
+>>>> Rohan
+>>>>
+>>>> On Sun, 25 May 2025 at 4:44 PM, Rohan Khandelwal <
+>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>
+>>>>> Date: 25 May
+>>>>>
+>>>>> - Converted trim and watermark removal api to fast api
+>>>>> - started code unification so that all the image apis would have same
+>>>>> url and different end.
+>>>>>
+>>>>> Regards
+>>>>>
+>>>>> Regards,
+>>>>> Rohan
+>>>>>
+>>>>> On Sat, 24 May 2025 at 7:12 PM, Rohan Khandelwal <
+>>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>>
+>>>>>> Date : 23 & 24
+>>>>>>
+>>>>>> - fixed error in price prediction.
+>>>>>> - moved and restructured (number plate , car orientation ) api
+>>>>>> completely on fast api, fast api is almost twice faster.
+>>>>>>
+>>>>>> ——————-
+>>>>>>
+>>>>>> Next plans:
+>>>>>> - move rest of the api’s to FastAPI
+>>>>>> - will brain storm and analyse the data for prompt creation for llm
+>>>>>> project.
+>>>>>> - validate ideas with prakhar for further continuation and test the
+>>>>>> app thoroughly.
+>>>>>> - revise and work with price prediction.
+>>>>>> - host all the app to GCP (dev, prod, pre-prod way).
+>>>>>>
+>>>>>> ——————
+>>>>>>
+>>>>>>
+>>>>>>
+>>>>>>
+>>>>>>
+>>>>>> On Thu, 22 May 2025 at 6:37 PM, Rohan Khandelwal <
+>>>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>>>
+>>>>>>> Date : 22nd
+>>>>>>>
+>>>>>>> Hi Sir,
+>>>>>>> - It is fixed as of now, but I will start round 2 for price
+>>>>>>> prediction next week, I will take the errors into consideration and
+>>>>>>> reiterate the problem in a detailed way including guardrails and other
+>>>>>>> factors as well.
+>>>>>>> - Will update the number plate model for the extremely slanted cars
+>>>>>>> (exceptional cases)
+>>>>>>>
+>>>>>>>
+>>>>>>> EDR :
+>>>>>>> - Completed orientation API
+>>>>>>> - Fixed price prediction  ,change the status code of errors as well.
+>>>>>>>
+>>>>>>>
+>>>>>>> Regards,
+>>>>>>> Rohan
+>>>>>>>
+>>>>>>>
+>>>>>>> On Thu, 22 May 2025 at 01:49, Neeraj Chauhan <
+>>>>>>> neeraj.chauhan@nxfin.in> wrote:
+>>>>>>>
+>>>>>>>>
+>>>>>>>> Rohan,
+>>>>>>>>
+>>>>>>>>
+>>>>>>>>
+>>>>>>>> https://www.nxcar.in/used-car-in/Gurgaon/Maruti%20Suzuki/Swift/VXi/16211
+>>>>>>>>
+>>>>>>>> Please check this, the recommended price is 4.75 L, which is higher
+>>>>>>>> than other cars listed for the same year.
+>>>>>>>> May be price influenced by Bangalore listings of the previous
+>>>>>>>> years.
+>>>>>>>>
+>>>>>>>> We need basic analytics guard rails around the recommended price
+>>>>>>>> range.
+>>>>>>>>
+>>>>>>>> On Wed, 21 May 2025 at 20:47, Rohan Khandelwal <
+>>>>>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>>>>>
+>>>>>>>>> Date : 21 May
+>>>>>>>>>
+>>>>>>>>> - car orientation api written
+>>>>>>>>> - prompts refinement + testing llm
+>>>>>>>>>
+>>>>>>>>>
+>>>>>>>>> Regards,
+>>>>>>>>> Rohan
+>>>>>>>>>
+>>>>>>>>> On Tue, 20 May 2025 at 8:26 PM, Rohan Khandelwal <
+>>>>>>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>>>>>>
+>>>>>>>>>> Date : 20 May
+>>>>>>>>>>
+>>>>>>>>>> - Writing API for car orientation model
+>>>>>>>>>> - worked on LLM Model (discussed with manvi and prakahar)
+>>>>>>>>>> - Moving to fast api from flask
+>>>>>>>>>>
+>>>>>>>>>> Regards,
+>>>>>>>>>> Rohan Khandelwal
+>>>>>>>>>>
+>>>>>>>>>> On Mon, 19 May 2025 at 18:41, Rohan Khandelwal <
+>>>>>>>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>>>>>>>
+>>>>>>>>>>> Date : 17 May
+>>>>>>>>>>>
+>>>>>>>>>>> -  Train and tested car orientation model , will write api
+>>>>>>>>>>> tomorrow
+>>>>>>>>>>> -  Discussed and brainstormed on llm project with prakhar and
+>>>>>>>>>>> manvi.
+>>>>>>>>>>> -  Added a vague (irrelevant question) loop in the car ai
+>>>>>>>>>>> project.
+>>>>>>>>>>>
+>>>>>>>>>>> Regards,
+>>>>>>>>>>> Rohan Khandelwal
+>>>>>>>>>>>
+>>>>>>>>>>>
+>>>>>>>>>>>
+>>>>>>>>>>> On Fri, 16 May 2025 at 20:10, Rohan Khandelwal <
+>>>>>>>>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>>>>>>>>
+>>>>>>>>>>>> Date : 16 May
+>>>>>>>>>>>>
+>>>>>>>>>>>>  - Improvised LLM App (changed on how it will react when vague
+>>>>>>>>>>>> queries will come).
+>>>>>>>>>>>>  - Tried some different approaches for improvisation of price
+>>>>>>>>>>>> prediction , read about fewer new algo , how cars depreciate with time
+>>>>>>>>>>>>  - Discussed with Rakesh ji then learnt how to trigger and
+>>>>>>>>>>>> setup jenkins job on our GCP hosted applications.
+>>>>>>>>>>>>
+>>>>>>>>>>>> Regards,
+>>>>>>>>>>>> Rohan
+>>>>>>>>>>>>
+>>>>>>>>>>>> On Thu, 15 May 2025 at 18:41, Rohan Khandelwal <
+>>>>>>>>>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>>>>>>>>>
+>>>>>>>>>>>>> Date :
+>>>>>>>>>>>>>
+>>>>>>>>>>>>> - worked on price prediction.
+>>>>>>>>>>>>> - researched on ci/cd deployment on GCR.
+>>>>>>>>>>>>> - worked on the LLM App.
+>>>>>>>>>>>>>
+>>>>>>>>>>>>> https://llmf-app-341598202610.us-west1.run.app/
+>>>>>>>>>>>>>
+>>>>>>>>>>>>> Regards,
+>>>>>>>>>>>>> Rohan
+>>>>>>>>>>>>>
+>>>>>>>>>>>>>
+>>>>>>>>>>>>>
+>>>>>>>>>>>>>
+>>>>>>>>>>>>>
+>>>>>>>>>>>>>
+>>>>>>>>>>>>> On Wed, 14 May 2025 at 21:27, Rohan Khandelwal <
+>>>>>>>>>>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>>>>>>>>>>
+>>>>>>>>>>>>>> Date :14th May
+>>>>>>>>>>>>>>
+>>>>>>>>>>>>>> ** Hosted our Car search LLM App on GCP
+>>>>>>>>>>>>>> - Please have a look, try and test it.
+>>>>>>>>>>>>>> - It will take little time to load as we are using free
+>>>>>>>>>>>>>> resources, hence don't press search button again and again while loading.
+>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>
+>>>>>>>>>>>>>> https://llmf-app-341598202610.us-west1.run.app/
+>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>
+>>>>>>>>>>>>>> On Wed, 14 May 2025 at 19:38, Rohan Khandelwal <
+>>>>>>>>>>>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>> Date : 14 May
+>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>> - Worked on API writing for LLM
+>>>>>>>>>>>>>>> - figuring out the way to host LLM App's
+>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>> Regards,
+>>>>>>>>>>>>>>> Rohan
+>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>> On Tue, 13 May 2025 at 19:34, Rohan Khandelwal <
+>>>>>>>>>>>>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>> Date : 13 May
+>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>> - LLM Demo level 1 ready , will present in tomorrow's meet
+>>>>>>>>>>>>>>>> , and host it tomorrow for testing purpose.
+>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>> Regards,
+>>>>>>>>>>>>>>>> Rohan
+>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>> On Mon, 12 May 2025 at 18:36, Rohan Khandelwal <
+>>>>>>>>>>>>>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>> Date : 12 May
+>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>> - LLM Work continuation
+>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>> Regards,
+>>>>>>>>>>>>>>>>> Rohan Khandelwal
+>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>> On Sat, 10 May 2025 at 22:37, Rohan Khandelwal <
+>>>>>>>>>>>>>>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>> Hi sir,
+>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>> All features has been integrated:
+>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>> 1) daily edr analysis (monthly is also there)
+>>>>>>>>>>>>>>>>>> 2) manual email option integrated (enter the email of
+>>>>>>>>>>>>>>>>>> nxfin domail and send the mail)
+>>>>>>>>>>>>>>>>>> 3) reset button is there , once clicking , old work gone
+>>>>>>>>>>>>>>>>>> and we can start afresh
+>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>> Regards,
+>>>>>>>>>>>>>>>>>> Rohan
+>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>> On Sat, 10 May 2025 at 17:44, Rohan Khandelwal <
+>>>>>>>>>>>>>>>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>> Sure sir, I’ll implement that option as well.
+>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>> On Sat, 10 May 2025 at 4:44 PM, Neeraj Chauhan <
+>>>>>>>>>>>>>>>>>>> neeraj.chauhan@nxfin.in> wrote:
+>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>> Ok. Can we also add space to add email Ids  ( only
+>>>>>>>>>>>>>>>>>>>> Nxfin domain ) to send /emails.
+>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>> On 10 May 2025, at 08:10, Rohan Khandelwal <
+>>>>>>>>>>>>>>>>>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>> ﻿
+>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>> Hi sir,
+>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>> Regarding your questions on the EDR report:
+>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>> 1.  The email report is automatically sent to the
+>>>>>>>>>>>>>>>>>>>> person whose data you are currently viewing. For instance, if you are
+>>>>>>>>>>>>>>>>>>>> looking at Rohan's EDR, the report will be sent directly to his email
+>>>>>>>>>>>>>>>>>>>> address. This has been configured in the backend, so there's no need for
+>>>>>>>>>>>>>>>>>>>> manual input on the frontend.
+>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>> 2.  The refresh issue might be specific to viewing on a
+>>>>>>>>>>>>>>>>>>>> phone. It is working as expected on a computer. However, I will investigate
+>>>>>>>>>>>>>>>>>>>> this further and aim to implement a fix today.
+>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>> 3.  Yes, I will include a day-wise summary in the
+>>>>>>>>>>>>>>>>>>>> monthly report as well.
+>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>> Regards,
+>>>>>>>>>>>>>>>>>>>> Rohan
+>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>> On Sat, 10 May 2025 at 6:09 AM, Neeraj Chauhan <
+>>>>>>>>>>>>>>>>>>>> neeraj.chauhan@nxfin.in> wrote:
+>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>> Thanks Rohan.
+>>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>> EDR report,
+>>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>> Email is being sent to what address. It’s not asking
+>>>>>>>>>>>>>>>>>>>>> the email ID.
+>>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>> 2. When one report is generated and new member/ period
+>>>>>>>>>>>>>>>>>>>>> is selected there is no proper way of refreshing / initiating the action.
+>>>>>>>>>>>>>>>>>>>>> 3. Can we also have a day wise summary in the monthly
+>>>>>>>>>>>>>>>>>>>>> report.
+>>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>> On 9 May 2025, at 16:20, Rohan Khandelwal <
+>>>>>>>>>>>>>>>>>>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>> ﻿
+>>>>>>>>>>>>>>>>>>>>> Date : 9 May
+>>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>> - continued price pred correction [tried to find
+>>>>>>>>>>>>>>>>>>>>> pattern of mismatch, but there was no relevant pattern , so thinking of
+>>>>>>>>>>>>>>>>>>>>> further approaches to deal with mismatched prices]
+>>>>>>>>>>>>>>>>>>>>> - trying to figure out how carwale is predicting price
+>>>>>>>>>>>>>>>>>>>>> using backtracking
+>>>>>>>>>>>>>>>>>>>>> - Added sales agent to llm app which will generate
+>>>>>>>>>>>>>>>>>>>>> lucrative 3 line statement for the cars which we display to the users
+>>>>>>>>>>>>>>>>>>>>>     ex : Discover incredible value with the Kia Seltos
+>>>>>>>>>>>>>>>>>>>>> HTE 1.5 Petrol MT! Available for just 995000.0, these 2023 models with only
+>>>>>>>>>>>>>>>>>>>>> 28500.0 km are an absolute steal. Don't miss out on this opportunity to own
+>>>>>>>>>>>>>>>>>>>>> a nearly-new Seltos at an unbeatable price!
+>>>>>>>>>>>>>>>>>>>>> - here is the edr analysis link:
+>>>>>>>>>>>>>>>>>>>>> https://edr-analysis.streamlit.app/
+>>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>> Regards,
+>>>>>>>>>>>>>>>>>>>>> Rohan
+>>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>> On Thu, 8 May 2025 at 18:22, Rohan Khandelwal <
+>>>>>>>>>>>>>>>>>>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>>> Date : 8 May
+>>>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>>> - discussion regarding LLM journey with prakhar sir
+>>>>>>>>>>>>>>>>>>>>>> - started price pred correction
+>>>>>>>>>>>>>>>>>>>>>> - trying to figure out how carwale is predicting
+>>>>>>>>>>>>>>>>>>>>>> price using backtracking
+>>>>>>>>>>>>>>>>>>>>>> - refactored number plate code increased speed by 50%
+>>>>>>>>>>>>>>>>>>>>>> and pushed to prod
+>>>>>>>>>>>>>>>>>>>>>> - corrected trim api
+>>>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>>> Regards,
+>>>>>>>>>>>>>>>>>>>>>> Rohan Khandelwal
+>>>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>>> On Wed, 7 May 2025 at 18:24, Rohan Khandelwal <
+>>>>>>>>>>>>>>>>>>>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>>>> Date : 7 May
+>>>>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>>>> - Completed NxCar logo augmentation in watermark
+>>>>>>>>>>>>>>>>>>>>>>> removal api
+>>>>>>>>>>>>>>>>>>>>>>> - completed llm reply tracking in langgraph work.
+>>>>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>>>> On Tue, 6 May 2025 at 19:23, Rohan Khandelwal <
+>>>>>>>>>>>>>>>>>>>>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>>>>> Date : 6 May
+>>>>>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>>>>> - Developed workflow in langgraph [under progress]
+>>>>>>>>>>>>>>>>>>>>>>>> for car llm application , created thread id's for separate conversations.
+>>>>>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>>>>> <image.png>
+>>>>>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>>>>> Regards,
+>>>>>>>>>>>>>>>>>>>>>>>> Rohan Khandelwal
+>>>>>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>>>>> On Mon, 5 May 2025 at 19:30, Rohan Khandelwal <
+>>>>>>>>>>>>>>>>>>>>>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>>>>>> Date : 5 May
+>>>>>>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>>>>>> - setup langraph for llm workflow
+>>>>>>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>>>>>> Regards,
+>>>>>>>>>>>>>>>>>>>>>>>>> Rohan
+>>>>>>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>>>>>> On Fri, 2 May 2025 at 19:16, Rohan Khandelwal <
+>>>>>>>>>>>>>>>>>>>>>>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>>>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>>>>>>> Date : 2 May
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>>>>>>> - Hosted car trim api [completed] ✅
+>>>>>>>>>>>>>>>>>>>>>>>>>> - Corrected price - pred for higher prediction
+>>>>>>>>>>>>>>>>>>>>>>>>>> issue [pushed to prod] ✅
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>>>>>>> Regards,
+>>>>>>>>>>>>>>>>>>>>>>>>>> Rohan Khandelwal
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>>>>>>> On Thu, 1 May 2025 at 19:53, Rohan Khandelwal <
+>>>>>>>>>>>>>>>>>>>>>>>>>> rohan.khandelwal@nxfin.in> wrote:
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>>>>>>>> Date : 1 May
+>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>>>>>>>> - Completed and tested car trim api
+>>>>>>>>>>>>>>>>>>>>>>>>>>> - will host tomorrow on GCP
+>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>>>>>>>> Regards,
+>>>>>>>>>>>>>>>>>>>>>>>>>>> Rohan Khandelwal
+>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>>>>>>>"
